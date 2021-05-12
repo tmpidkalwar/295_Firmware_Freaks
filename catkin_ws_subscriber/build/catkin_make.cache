@@ -1,0 +1,2 @@
+listener_core
+-DCATKIN_DEVEL_PREFIX=/home/nano/catkin_ws_subscriber/devel -DCMAKE_INSTALL_PREFIX=/home/nano/catkin_ws_subscriber/install -G Unix Makefiles

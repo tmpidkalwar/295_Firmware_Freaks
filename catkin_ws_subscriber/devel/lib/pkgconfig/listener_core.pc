@@ -1,0 +1,8 @@
+prefix=/home/nano/catkin_ws_subscriber/devel
+
+Name: listener_core
+Description: Description of listener_core
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+Path_finding_Hybrid_A-
+-DCATKIN_DEVEL_PREFIX=/home/nano/catkin_ws_path_planner_custom/devel -DCMAKE_INSTALL_PREFIX=/home/nano/catkin_ws_path_planner_custom/install -G Unix Makefiles
