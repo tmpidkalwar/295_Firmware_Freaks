@@ -27,6 +27,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "periodic_scheduler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -297,7 +299,9 @@ int main(void)
   MX_ADC3_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  const bool run_1000hz = true;
+  const size_t stack_size_bytes = 2048 / sizeof(void *);
+  periodic_scheduler__initialize(stack_size_bytes, run_1000hz);
   /* USER CODE END 2 */
 
   /* Init scheduler */
