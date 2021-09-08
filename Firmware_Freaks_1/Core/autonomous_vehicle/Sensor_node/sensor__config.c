@@ -1,26 +1,19 @@
-//#include "gpio.h"
-
 #include "sensor__config.h"
-#include "stm32f7xx_hal_adc.h"
-#include "stm32f7xx_hal_tim.h"
+
+#include "stm32f7xx_hal.h"
+
 
 /****************************************************************************************
  **************************** S T A T I C   P A R A M S *********************************
  ****************************************************************************************/
 
-//static uint8_t rear_sensor_adc_channel = ADC__CHANNEL_3;
-//static uint8_t left_sensor_adc_channel = ADC__CHANNEL_4;
-//static uint8_t right_sensor_adc_channel = ADC__CHANNEL_5;
-//static uint8_t front_sensor_adc_channel = ADC__CHANNEL_2;
-
-ADC_HandleTypeDef hadc1; //FRONT
-ADC_HandleTypeDef hadc2; //LEFT
-ADC_HandleTypeDef hadc3; //RIGHT
+ADC_HandleTypeDef hadc1; //FRONT_SENSOR
+ADC_HandleTypeDef hadc2; //LEFT_SENSOR
+ADC_HandleTypeDef hadc3; //RIGHT_SENSOR
 
 TIM_HandleTypeDef htim1; //Using TIM1 for microsecond delay
 
 static const uint8_t trigger_delay_time = 30;
-static gpio_s trigger_left, trigger_front, trigger_right, trigger_rear;
 
 
 /****************************************************************************************
@@ -33,36 +26,30 @@ void delay__us (uint16_t us)
 	while (__HAL_TIM_GET_COUNTER(&htim1) < us);  // wait for the counter to reach the us input in the parameter
 }
 
-void sensor_node__init_trigger_pins_as_gpio(void) {
-//  trigger_left = gpio__construct_as_output(0, 6);
-//  trigger_front = gpio__construct_as_output(0, 7);
-//  trigger_right = gpio__construct_as_output(0, 8);
-  // trigger_rear = gpio__construct_as_output(0, 9);
+
+void sensor_node__trigger_Front_ultrasonic(void) {
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_RESET);
+	delay__us(trigger_delay_time);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);
 }
 
 void sensor_node__trigger_Left_ultrasonic(void) {
-//  gpio__set(trigger_left);
-  delay__us(trigger_delay_time);
-//  gpio__reset(trigger_left);
-}
-
-void sensor_node__trigger_Front_ultrasonic(void) {
-//  gpio__set(trigger_front);
-  delay__us(trigger_delay_time);
-//  gpio__reset(trigger_front);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+	delay__us(trigger_delay_time);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
 }
 
 void sensor_node__trigger_Right_ultrasonic(void) {
-//  gpio__set(trigger_right);
-  delay__us(trigger_delay_time);
-//  gpio__reset(trigger_right);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+	delay__us(trigger_delay_time);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
 }
 
-void sensor_node__trigger_Rear_ultrasonic(void) {
-//  gpio__set(trigger_rear);
-  delay__us(trigger_delay_time);
-//  gpio__reset(trigger_rear);
-}
+//void sensor_node__trigger_Rear_ultrasonic(void) {
+////	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_RESET);
+//	delay__us(trigger_delay_time);
+////	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);
+//}
 
 uint32_t sensor_config__read_sens_raw_value(sensor_index current_sensor) {
   switch (current_sensor) {
