@@ -20,7 +20,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -59,70 +58,7 @@ UART_HandleTypeDef huart3;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
-/* Definitions for SensorTask */
-osThreadId_t SensorTaskHandle;
-const osThreadAttr_t SensorTask_attributes = {
-  .name = "SensorTask",
-  .priority = (osPriority_t) osPriorityNormal,
-  .stack_size = 128 * 4
-};
-/* Definitions for MotorTask */
-osThreadId_t MotorTaskHandle;
-const osThreadAttr_t MotorTask_attributes = {
-  .name = "MotorTask",
-  .priority = (osPriority_t) osPriorityNormal,
-  .stack_size = 128 * 4
-};
 /* USER CODE BEGIN PV */
-
-
-typedef enum driving_states {
-  HARD_STOP = 0,
-  SOFT_STOP,  // Try to change direction as obstacle nearing ahead if possible, otherwise try to stop
-  KEEP_GOING, // As no obstacle ahead
-  FAULT_STATE
-} driving_states;
-
-typedef union possible_steer_angle_range {
-  uint32_t is_possible;
-  struct data {
-    uint16_t min_angle;
-    uint16_t max_angle;
-  } data;
-} possible_steer_angle_range;
-
-static possible_steer_angle_range left_steering_possible_angles;
-static possible_steer_angle_range right_steering_possible_angles;
-
-static uint16_t left_obstacle_distance_in_cm;
-static uint16_t right_obstacle_distance_in_cm;
-static uint16_t front_obstacle_distance_in_cm;
-static uint16_t rear_obstacle_distance_in_cm;
-
-
-const static uint16_t max_obstacle_dist_to_restrict_steering = 250;
-const static uint16_t min_obstacle_dist_to_allow_steering = 85;
-const static uint16_t min_angle = 0;
-const static uint16_t max_angle = 45;
-
-const static uint16_t max_front_sensor_value_to_start_forcing_car_turn = 200;
-const static uint16_t min_front_sensor_value_to_start_forcing_car_turn = 100;
-
-typedef struct possible_speed_range {
-  driving_states drivingState;
-  struct speed_data {
-    float min_speed;
-    float max_speed;
-  } speed_data;
-} possible_speed_range;
-
-static possible_speed_range forward_speed_range;
-static possible_speed_range reverse_speed_range;
-
-const static uint16_t max_obstacle_dist_to_start_controlling_speed = 400;
-const static uint16_t min_obstacle_dist_to_start_controlling_speed = 95;
-const static float max_speed = 12.5;
-const static float min_speed = 0;
 
 
 /* USER CODE END PV */
@@ -138,9 +74,6 @@ static void MX_ADC1_Init(void);
 static void MX_ADC2_Init(void);
 static void MX_ADC3_Init(void);
 static void MX_TIM3_Init(void);
-void StartSensorTask(void *argument);
-void StartMotorTask(void *argument);
-
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -148,117 +81,6 @@ void StartMotorTask(void *argument);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-static uint16_t get_steering_anlge_corresponding_to_obstacle_distance(uint16_t obstacle_distance) {
-  uint16_t retVal = 0;
-  retVal = (obstacle_distance - min_obstacle_dist_to_allow_steering) * (max_angle - min_angle) /
-               (max_obstacle_dist_to_restrict_steering - min_obstacle_dist_to_allow_steering) +
-           min_angle;
-  return retVal;
-}
-
-static void update_min_possible_steering_angles(void) {
-  if (front_obstacle_distance_in_cm < max_front_sensor_value_to_start_forcing_car_turn &&
-      front_obstacle_distance_in_cm > min_front_sensor_value_to_start_forcing_car_turn) {
-    left_steering_possible_angles.data.min_angle =
-        (left_steering_possible_angles.data.max_angle == max_angle) ? max_angle : min_angle;
-    left_steering_possible_angles.data.max_angle = left_steering_possible_angles.data.min_angle;
-
-    right_steering_possible_angles.data.min_angle =
-        (right_steering_possible_angles.data.max_angle == max_angle) ? max_angle : min_angle;
-    right_steering_possible_angles.data.max_angle = right_steering_possible_angles.data.max_angle;
-
-  } else if (front_obstacle_distance_in_cm < min_front_sensor_value_to_start_forcing_car_turn) {
-    right_steering_possible_angles.is_possible = 0;
-    left_steering_possible_angles.is_possible = 0;
-  }
-}
-
-static void calculate_possible_steering_angle_range(void) {
-  // left steering angle range
-  // If left obstacle is farther than or equal to max threshold,
-  if (left_obstacle_distance_in_cm >= max_obstacle_dist_to_restrict_steering) {
-    left_steering_possible_angles.data.max_angle = max_angle;
-    left_steering_possible_angles.data.min_angle = min_angle;
-  } else if (left_obstacle_distance_in_cm >= min_obstacle_dist_to_allow_steering) {
-    left_steering_possible_angles.data.max_angle =
-        get_steering_anlge_corresponding_to_obstacle_distance(left_obstacle_distance_in_cm);
-    left_steering_possible_angles.data.min_angle = 0;
-  } else {
-    left_steering_possible_angles.data.max_angle = 0;
-    left_steering_possible_angles.data.min_angle = 0;
-  }
-
-  // Right steering angle range
-  if (right_obstacle_distance_in_cm >= max_obstacle_dist_to_restrict_steering) {
-    right_steering_possible_angles.data.max_angle = max_angle;
-    right_steering_possible_angles.data.min_angle = min_angle;
-  } else if (right_obstacle_distance_in_cm >= min_obstacle_dist_to_allow_steering) {
-    right_steering_possible_angles.data.max_angle =
-        get_steering_anlge_corresponding_to_obstacle_distance(right_obstacle_distance_in_cm);
-    right_steering_possible_angles.data.min_angle = min_angle;
-  } else {
-    right_steering_possible_angles.data.max_angle = 0;
-    right_steering_possible_angles.data.min_angle = 0;
-  }
-  update_min_possible_steering_angles();
-}
-
-static float get_speed_corresponding_to_obstacle_distance(uint16_t obstacle_distance) {
-  uint16_t retVal = 0;
-  retVal = (obstacle_distance - min_obstacle_dist_to_start_controlling_speed) * (max_speed - min_speed) /
-               (max_obstacle_dist_to_start_controlling_speed - min_obstacle_dist_to_start_controlling_speed) +
-           min_speed;
-  return retVal;
-}
-
-static void update_driving_states(void) {
-
-  if (front_obstacle_distance_in_cm >= max_front_sensor_value_to_start_forcing_car_turn) {
-    forward_speed_range.drivingState = KEEP_GOING;
-  } else if (front_obstacle_distance_in_cm < max_front_sensor_value_to_start_forcing_car_turn &&
-             front_obstacle_distance_in_cm > min_front_sensor_value_to_start_forcing_car_turn) {
-    forward_speed_range.drivingState = SOFT_STOP;
-  } else if (front_obstacle_distance_in_cm <= min_front_sensor_value_to_start_forcing_car_turn) {
-    forward_speed_range.drivingState = HARD_STOP;
-  } else {
-    forward_speed_range.drivingState = FAULT_STATE;
-  }
-}
-
-static void calculate_possible_fwd_reverse_speed_range(void) {
-  // Forward speed processing
-  if (front_obstacle_distance_in_cm >= max_obstacle_dist_to_restrict_steering) {
-    forward_speed_range.speed_data.max_speed = max_speed;
-    forward_speed_range.speed_data.min_speed = min_speed;
-  } else if (front_obstacle_distance_in_cm >= min_obstacle_dist_to_start_controlling_speed) {
-    forward_speed_range.speed_data.max_speed =
-        get_speed_corresponding_to_obstacle_distance(front_obstacle_distance_in_cm);
-    forward_speed_range.speed_data.min_speed = min_speed;
-  } else {
-    forward_speed_range.speed_data.max_speed = min_speed;
-    forward_speed_range.speed_data.min_speed = min_speed;
-    // As car can'g move ahead, turn the car to the left or right at maximum possible angle
-    // left_steering_possible_angles.data.min_angle = left_steering_possible_angles.data.max_angle;
-    // right_steering_possible_angles.data.min_angle = right_steering_possible_angles.data.max_angle;
-  }
-
-  // Reverse speed processing
-  if (rear_obstacle_distance_in_cm >= max_obstacle_dist_to_restrict_steering) {
-    reverse_speed_range.speed_data.max_speed = max_speed;
-    reverse_speed_range.speed_data.min_speed = min_speed;
-    reverse_speed_range.drivingState = KEEP_GOING;
-  } else if (rear_obstacle_distance_in_cm >= min_obstacle_dist_to_start_controlling_speed) {
-    reverse_speed_range.speed_data.max_speed =
-        get_speed_corresponding_to_obstacle_distance(rear_obstacle_distance_in_cm);
-    reverse_speed_range.speed_data.min_speed = min_speed;
-    reverse_speed_range.drivingState = KEEP_GOING;
-  } else {
-    reverse_speed_range.speed_data.max_speed = min_speed;
-    reverse_speed_range.speed_data.min_speed = min_speed;
-    reverse_speed_range.drivingState = HARD_STOP;
-  }
-  update_driving_states();
-}
 
 /* USER CODE END 0 */
 
@@ -304,40 +126,6 @@ int main(void)
   periodic_scheduler__initialize(stack_size_bytes, run_1000hz);
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();
-
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
-  /* Create the thread(s) */
-  /* creation of SensorTask */
-  SensorTaskHandle = osThreadNew(StartSensorTask, NULL, &SensorTask_attributes);
-
-  /* creation of MotorTask */
-  MotorTaskHandle = osThreadNew(StartMotorTask, NULL, &MotorTask_attributes);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* Start scheduler */
-  osKernelStart();
- 
-  /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -843,92 +631,6 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
-
-/* USER CODE BEGIN Header_StartSensorTask */
-/**
-  * @brief  Function implementing the SensorTask thread.
-  * @param  argument: Not used 
-  * @retval None
-  */
-/* USER CODE END Header_StartSensorTask */
-void StartSensorTask(void *argument)
-{
-  /* USER CODE BEGIN 5 */
-	uint8_t adc_samples = 10, iter = 0;
-	uint16_t left_sensor_value, front_sensor_value, right_sensor_value;
-	uint16_t temp_left_sensor_val, temp_front_sensor_val, temp_right_sensor_val;
-	uint32_t total_left_value = 0, total_front_value = 0, total_right_value = 0;
-  /* Infinite loop */
-  for(;;)
-  {
-	  // Get ADC1 value
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, 20);
-	  temp_left_sensor_val = HAL_ADC_GetValue(&hadc1);
-
-	  // Get ADC2 value
-	  HAL_ADC_Start(&hadc2);
-	  HAL_ADC_PollForConversion(&hadc2, 20);
-	  temp_front_sensor_val = HAL_ADC_GetValue(&hadc2);
-
-	  // Get ADC3 value
-	  HAL_ADC_Start(&hadc3);
-	  HAL_ADC_PollForConversion(&hadc3, 20);
-	  temp_right_sensor_val = HAL_ADC_GetValue(&hadc3);
-
-	  if(iter ==adc_samples){
-		  left_sensor_value = total_left_value/adc_samples;
-		  left_obstacle_distance_in_cm = (left_sensor_value / 10) * 1.25;
-		  front_sensor_value = total_front_value/adc_samples;
-		  front_obstacle_distance_in_cm = (front_sensor_value / 10) * 1.25;
-		  right_sensor_value = total_right_value/adc_samples;
-		  right_obstacle_distance_in_cm = (right_sensor_value / 10) * 1.25;
-
-		  total_left_value = 0;
-		  total_front_value = 0;
-		  total_right_value =0;
-		  iter = 0;
-
-	  }else{
-		  total_left_value += temp_left_sensor_val;
-		  total_front_value += temp_front_sensor_val;
-		  total_right_value += temp_right_sensor_val;
-		  iter ++;
-	  }
-
-	  osDelay(5);
-  }
-  /* USER CODE END 5 */ 
-}
-
-/* USER CODE BEGIN Header_StartMotorTask */
-/**
-* @brief Function implementing the MotorTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartMotorTask */
-void StartMotorTask(void *argument)
-{
-  /* USER CODE BEGIN StartMotorTask */
-
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-
-	__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1900);
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 1500);
-
-
-  /* Infinite loop */
-  for(;;)
-  {
-	  calculate_possible_steering_angle_range();
-	  calculate_possible_fwd_reverse_speed_range();
-
-	  osDelay(5);
-  }
-  /* USER CODE END StartMotorTask */
-}
 
  /**
   * @brief  Period elapsed callback in non blocking mode
