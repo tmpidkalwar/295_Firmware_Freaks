@@ -3,6 +3,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+#include "periodic_callbacks.h"
 /// Task data structure of each periodic task
 typedef struct {
   /// Task uses vTaskDelayUntil() to carry out its periodic callback
@@ -55,7 +56,8 @@ static void periodic_scheduler__check_flag(periodic_scheduler_s *periodic_task, 
     if (periodic_task->task_finished_flag) {
       periodic_task->task_finished_flag = false;
     } else {
-      NVIC_SystemReset();
+    	// TODO:: Check how to do system reset here
+      //NVIC_SystemReset();
     }
   }
 }

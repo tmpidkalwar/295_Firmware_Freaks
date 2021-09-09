@@ -5,9 +5,9 @@
  *      All distance related parameters are in centi meter unit for this file.
  */
 
-#include "driver__process_sens_data.h"
+#include "../Driver_node/driver__process_sens_data.h"
 
-#include "sensor__val_conv.h"
+#include "../Sensor_node/sensor__val_conv.h"
 
 /***************************************************************************************
  ****************************L O C A L    C O M P O N E N T S*************************
@@ -156,10 +156,7 @@ static void calculate_possible_fwd_reverse_speed_range(void) {
  ****************************G L O B A L    C O M P O N E N T S*************************
  ***************************************************************************************/
 
-void driver_process_sens_data__process_input(dbc_SENSOR_SONARS_s *sensor_data) {
-  if (sensor_data == NULL) {
-    return;
-  }
+void driver_process_sens_data__process_input(void) {
   left_obstacle_distance_in_cm = sens_val_conv__get_filtered_val_in_cm(LEFT_SENSOR);
   right_obstacle_distance_in_cm = sens_val_conv__get_filtered_val_in_cm(RIGHT_SENSOR);
   front_obstacle_distance_in_cm = sens_val_conv__get_filtered_val_in_cm(FRONT_SENSOR);

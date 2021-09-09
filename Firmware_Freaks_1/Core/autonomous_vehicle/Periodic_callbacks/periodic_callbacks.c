@@ -3,10 +3,10 @@
 #include "periodic_callbacks.h"
 
 
-static uint16_t current_adc_value1;
-static uint16_t current_adc_value2;
-static uint16_t current_adc_value3;
-static uint16_t current_adc_value4;
+//static uint16_t current_adc_value1;
+//static uint16_t current_adc_value2;
+//static uint16_t current_adc_value3;
+//static uint16_t current_adc_value4;
 
 /******************************************************************************
  * Your board will reset if the periodic function does not return within its deadline

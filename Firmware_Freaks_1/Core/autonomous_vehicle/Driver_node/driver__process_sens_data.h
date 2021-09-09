@@ -1,6 +1,7 @@
 #pragma once
 
 //#include "project.h"
+#include <stdint.h>
 
 typedef enum driving_states {
   HARD_STOP = 0,
@@ -25,7 +26,7 @@ typedef struct possible_speed_range {
   } speed_data;
 } possible_speed_range;
 
-void driver_process_sens_data__process_input(dbc_SENSOR_SONARS_s *sensor_data);
+void driver_process_sens_data__process_input(void);
 
 possible_speed_range driver_process_sens_data__get_fwd_speed_range(void);
 

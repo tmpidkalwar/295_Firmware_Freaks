@@ -8,6 +8,8 @@ typedef struct sens_val_buff {
   int current_pointer; // Points to next available index
 } sens_val_buff;
 
+extern uint32_t sensor_config__read_sens_raw_value(sensor_index current_sensor);
+
 sens_val_buff sens_data_buff[MAX_SENSOR];
 static const uint16_t buffer_size = 10;
 static const uint16_t filter_sample_count = 7;
