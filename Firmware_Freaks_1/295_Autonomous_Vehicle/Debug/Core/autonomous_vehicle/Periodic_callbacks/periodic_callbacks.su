@@ -1,0 +1,5 @@
+periodic_callbacks.c:28:6:periodic_callbacks__initialize	8	static
+periodic_callbacks.c:35:6:periodic_callbacks__1Hz	16	static
+periodic_callbacks.c:46:6:periodic_callbacks__10Hz	16	static
+periodic_callbacks.c:51:6:periodic_callbacks__100Hz	24	static
+periodic_callbacks.c:97:6:periodic_callbacks__1000Hz	16	static

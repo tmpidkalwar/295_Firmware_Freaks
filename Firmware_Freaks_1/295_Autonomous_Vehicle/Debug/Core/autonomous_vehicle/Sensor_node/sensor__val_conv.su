@@ -1,0 +1,14 @@
+sensor__val_conv.c:17:12:compare	16	static
+sensor__val_conv.c:20:22:calc_avg_of_median_samples_in_buffer	32	static
+sensor__val_conv.c:30:6:sens_val_conv__buffer_init	16	static
+sensor__val_conv.c:37:6:sens_val_conv__update_buffer	16	static
+sensor__val_conv.c:43:15:sens_val_conv__get_filtered_val_in_cm	16	static
+sensor__val_conv.c:54:10:sens_val_conv__get_sens_val_in_cm	24	static
+sensor__val_conv.c:78:6:sens_val_conv__set_left_sens	16	static
+sensor__val_conv.c:80:6:sens_val_conv__set_right_sens	16	static
+sensor__val_conv.c:82:6:sens_val_conv__set_front_sens	16	static
+sensor__val_conv.c:84:6:sens_val_conv__set_rear_sens	16	static
+sensor__val_conv.c:86:10:sens_val_conv__get_left_sens	4	static
+sensor__val_conv.c:88:10:sens_val_conv__get_right_sens	4	static
+sensor__val_conv.c:90:10:sens_val_conv__get_front_sens	4	static
+sensor__val_conv.c:92:10:sens_val_conv__get_rear_sens	4	static

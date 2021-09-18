@@ -1,0 +1,11 @@
+driver__process_sens_data.c:34:17:get_steering_anlge_corresponding_to_obstacle_distance	24	static
+driver__process_sens_data.c:45:13:update_min_possible_steering_angles	4	static
+driver__process_sens_data.c:62:13:calculate_possible_steering_angle_range	8	static
+driver__process_sens_data.c:98:14:get_speed_corresponding_to_obstacle_distance	24	static
+driver__process_sens_data.c:106:13:update_driving_states	4	static
+driver__process_sens_data.c:120:13:calculate_possible_fwd_reverse_speed_range	8	static
+driver__process_sens_data.c:159:6:driver_process_sens_data__process_input	8	static
+driver__process_sens_data.c:168:22:driver_process_sens_data__get_fwd_speed_range	16	static
+driver__process_sens_data.c:170:22:driver_process_sens_data__get_reverse_speed_range	16	static
+driver__process_sens_data.c:172:28:driver_process_sens_data__get_left_steer_range	4	static
+driver__process_sens_data.c:176:28:driver_process_sens_data__get_right_steer_range	4	static

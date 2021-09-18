@@ -1,0 +1,8 @@
+motor_esc.c:138:6:motor_esc__control_speed	16	static
+motor_esc.c:263:6:motor_esc__maintain_speed	16	static
+motor_esc.c:279:6:motor_esc__stop_motor	8	static
+motor_esc.c:281:6:motor_esc__steer_handler	24	static
+motor_esc.c:394:7:get_dc_motor_pwm	4	static
+motor_esc.c:396:7:get_servo_motor_pwm	4	static
+motor_esc.c:399:13:motor_esc__set_steer_angle	16	static
+motor_esc.c:405:13:motor_esc__set_motor_speed	16	static

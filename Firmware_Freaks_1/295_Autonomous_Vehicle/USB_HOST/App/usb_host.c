@@ -71,7 +71,7 @@ void MX_USB_HOST_Init(void)
   /* USER CODE BEGIN USB_HOST_Init_PreTreatment */
   
   /* USER CODE END USB_HOST_Init_PreTreatment */
-  
+
   /* Init host Library, add supported class and start the library. */
   if (USBH_Init(&hUsbHostHS, USBH_UserProcess, HOST_HS) != USBH_OK)
   {
