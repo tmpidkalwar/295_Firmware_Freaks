@@ -34,13 +34,13 @@ void periodic_callbacks__initialize(void) {
 bool flag = true;
 void periodic_callbacks__1Hz(uint32_t callback_count) {
 	//sensor_node__trigger_Front_ultrasonic();
-	if(flag){
-	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13, GPIO_PIN_SET);
-	flag = false;
-	}else {
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-	flag = true;
-	}
+//	if(flag){
+//	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13, GPIO_PIN_SET);
+//	flag = false;
+//	}else {
+//	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
+//	flag = true;
+//	}
 }
 
 void periodic_callbacks__10Hz(uint32_t callback_count) {
