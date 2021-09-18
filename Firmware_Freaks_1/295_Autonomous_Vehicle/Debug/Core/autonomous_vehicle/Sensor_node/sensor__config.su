@@ -1,6 +1,6 @@
 sensor__config.c:23:6:delay__us	16	static
 sensor__config.c:30:6:sensor_node__trigger_Front_ultrasonic	8	static
-sensor__config.c:43:6:sensor_node__trigger_Left_ultrasonic	8	static
-sensor__config.c:49:6:sensor_node__trigger_Right_ultrasonic	8	static
-sensor__config.c:55:6:sensor_node__trigger_Rear_ultrasonic	8	static
-sensor__config.c:61:10:sensor_config__read_sens_raw_value	16	static
+sensor__config.c:36:6:sensor_node__trigger_Left_ultrasonic	8	static
+sensor__config.c:42:6:sensor_node__trigger_Right_ultrasonic	8	static
+sensor__config.c:48:6:sensor_node__trigger_Rear_ultrasonic	4	static
+sensor__config.c:54:10:sensor_config__read_sens_raw_value	16	static

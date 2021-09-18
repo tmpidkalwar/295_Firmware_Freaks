@@ -66,7 +66,7 @@ uint16_t sens_val_conv__get_sens_val_in_cm(sensor_index current_sens) {
     conv_val /= 10;
   }
 
-  return raw_val;//conv_val;
+  return conv_val;
 }
 
 /*****************Without Buffer Operation**************************************/

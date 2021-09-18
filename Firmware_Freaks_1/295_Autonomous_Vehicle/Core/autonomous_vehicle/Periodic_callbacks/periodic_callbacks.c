@@ -29,6 +29,7 @@ void periodic_callbacks__initialize(void) {
   // This method is invoked once when the periodic tasks are created
 	motor_esc__control_speed(5);
 	motor_esc__steer_handler(43);
+	sens_val_conv__buffer_init();
 }
 
 bool flag = true;
@@ -47,10 +48,11 @@ void periodic_callbacks__10Hz(uint32_t callback_count) {
 
 }
 
-char buff[30] = "";
+char buff[100] = "";
 void periodic_callbacks__100Hz(uint32_t callback_count) {
 	  volatile static int chance = 0;
-	  uint16_t current_adc_value = 0;
+	  uint16_t current_adc_value_front = 0, current_adc_value_left = 0, current_adc_value_right = 0;
+	  uint16_t SENSOR_SONARS_left = 0, SENSOR_SONARS_middle = 0, SENSOR_SONARS_right = 0;
 	  if (callback_count % 5 == 0) {
 	    if (chance == 0) {
 
@@ -60,24 +62,30 @@ void periodic_callbacks__100Hz(uint32_t callback_count) {
 	      sensor_node__trigger_Left_ultrasonic();
 	      sensor_node__trigger_Right_ultrasonic();
 	    }
+	    SENSOR_SONARS_left = sens_val_conv__get_filtered_val_in_cm(LEFT_SENSOR);
+	    SENSOR_SONARS_middle = sens_val_conv__get_filtered_val_in_cm(FRONT_SENSOR);
+	    SENSOR_SONARS_right = sens_val_conv__get_filtered_val_in_cm(RIGHT_SENSOR);
+	    sprintf(buff, "front ADC value %d   left ADC value %d   Right ADC value %d\r\n", SENSOR_SONARS_middle, SENSOR_SONARS_left, SENSOR_SONARS_right);
+	    HAL_UART_Transmit(&huart1, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
 	  } else if (callback_count % 5 == 4) {
 
 	    if (chance == 0) {
-	      current_adc_value = sens_val_conv__get_sens_val_in_cm(FRONT_SENSOR);
-//	      sens_val_conv__update_buffer(FRONT_SENSOR, current_adc_value);
+	    	current_adc_value_front = sens_val_conv__get_sens_val_in_cm(FRONT_SENSOR);
+	      sens_val_conv__update_buffer(FRONT_SENSOR, current_adc_value_front);
 //	      sens_val_conv__set_front_sens(current_adc_value);
 	      chance++;
 	      //read_array[chance++] = current_adc_value;
-	      sprintf(buff, "front ADC value %d   ", current_adc_value);
+	     //sprintf(buff, "front ADC value %d   ", current_adc_value_front);
 	    } else if (chance == 1) {
-	      current_adc_value = sens_val_conv__get_sens_val_in_cm(LEFT_SENSOR);
-//	      sens_val_conv__update_buffer(LEFT_SENSOR, current_adc_value);
-//	      sens_val_conv__set_left_sens(current_adc_value);
-//	      current_adc_value = sens_val_conv__get_sens_val_in_cm(RIGHT_SENSOR);
-//	      sens_val_conv__update_buffer(RIGHT_SENSOR, current_adc_value);
+	      current_adc_value_left = sens_val_conv__get_sens_val_in_cm(LEFT_SENSOR);
+	      sens_val_conv__update_buffer(LEFT_SENSOR, current_adc_value_left);
+	      //sens_val_conv__set_left_sens(current_adc_value);
+	      current_adc_value_right = sens_val_conv__get_sens_val_in_cm(RIGHT_SENSOR);
+	      sens_val_conv__update_buffer(RIGHT_SENSOR, current_adc_value_right);
 //	      sens_val_conv__set_right_sens(current_adc_value);
 	     // read_array[chance++] = current_adc_value;
-	      sprintf(buff, "left ADC value %d\r\n", current_adc_value);
+
+	     // sprintf(buff, "Right ADC value %d\r\n", current_adc_value_right);
 	      chance = 0;
 	    }
 //	    current_adc_value4 = sens_val_conv__get_sens_val_in_cm(REAR_SENSOR);
@@ -85,7 +93,6 @@ void periodic_callbacks__100Hz(uint32_t callback_count) {
 //	    sens_val_conv__set_rear_sens(current_adc_value4);
 	      //current_adc_value++;
 
-	    HAL_UART_Transmit(&huart1, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
 	  }
 }
 

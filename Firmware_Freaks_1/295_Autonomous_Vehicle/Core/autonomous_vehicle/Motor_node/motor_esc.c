@@ -399,7 +399,7 @@ float get_servo_motor_pwm() { return steer_pwm_val; }
 static void motor_esc__set_steer_angle(float servo_pwm_val) {
   //  fprintf(stderr, " Current pwm val on servo : %f", steer_pwm_val);
   steer_pwm_val = 5;//servo_pwm_val;
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, servo_pwm_val);  //Set Servo Duty cycle
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, servo_pwm_val);  //Set Servo Duty cycle
 }
 
 static void motor_esc__set_motor_speed(float motor_speed) {
