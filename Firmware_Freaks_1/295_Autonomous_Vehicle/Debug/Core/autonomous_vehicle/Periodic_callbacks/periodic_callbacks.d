@@ -4,6 +4,8 @@ Core/autonomous_vehicle/Periodic_callbacks/periodic_callbacks.o: \
  ../Core/autonomous_vehicle/Periodic_callbacks/../Sensor_node/sensor__config.h \
  ../Core/autonomous_vehicle/Periodic_callbacks/../Sensor_node/sensor__val_conv.h \
  ../Core/autonomous_vehicle/Periodic_callbacks/../Motor_node/motor_esc.h \
+ ../Core/autonomous_vehicle/Periodic_callbacks/../Driver_node/driver__process_sens_data.h \
+ ../Core/autonomous_vehicle/Periodic_callbacks/../Driver_node/driver__process_high_sys_data.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -53,6 +55,10 @@ Core/autonomous_vehicle/Periodic_callbacks/periodic_callbacks.o: \
 ../Core/autonomous_vehicle/Periodic_callbacks/../Sensor_node/sensor__val_conv.h:
 
 ../Core/autonomous_vehicle/Periodic_callbacks/../Motor_node/motor_esc.h:
+
+../Core/autonomous_vehicle/Periodic_callbacks/../Driver_node/driver__process_sens_data.h:
+
+../Core/autonomous_vehicle/Periodic_callbacks/../Driver_node/driver__process_high_sys_data.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 

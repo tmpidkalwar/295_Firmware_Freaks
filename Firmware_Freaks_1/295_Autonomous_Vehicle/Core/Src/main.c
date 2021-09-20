@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
+#include "../autonomous_vehicle/Periodic_callbacks/periodic_scheduler.h"
 
 /* USER CODE END Includes */
 
@@ -148,11 +149,25 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim1);
-   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2); //SERVO_PWM
-   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1); //DC_PWM
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2); //SERVO_PWM
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1); //DC_PWM
 
-   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1500);  //Set Servo Duty cycle to 15%
-   __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1500);  //Set DC motor Duty cycle to 15%
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1500);  //Set Servo Duty cycle to 15%
+  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1500);  //Set DC motor Duty cycle to 15%
+
+//  HAL_Delay(2000);
+//
+//  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1200);
+//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1620);
+//
+//  HAL_Delay(2000);
+//
+//  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1800);
+//
+//  HAL_Delay(2000);
+//
+//  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1500);
+
 
   const bool run_1000hz = true;
   const size_t stack_size_bytes = 2048 / sizeof(void *);

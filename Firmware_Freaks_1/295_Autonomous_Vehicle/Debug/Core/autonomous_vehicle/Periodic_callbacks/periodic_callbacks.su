@@ -1,5 +1,5 @@
-periodic_callbacks.c:28:6:periodic_callbacks__initialize	8	static
-periodic_callbacks.c:36:6:periodic_callbacks__1Hz	16	static
-periodic_callbacks.c:47:6:periodic_callbacks__10Hz	16	static
-periodic_callbacks.c:52:6:periodic_callbacks__100Hz	40	static
-periodic_callbacks.c:104:6:periodic_callbacks__1000Hz	16	static
+periodic_callbacks.c:30:6:periodic_callbacks__initialize	8	static
+periodic_callbacks.c:38:6:periodic_callbacks__1Hz	16	static
+periodic_callbacks.c:49:6:periodic_callbacks__10Hz	16	static
+periodic_callbacks.c:65:6:periodic_callbacks__100Hz	32	static
+periodic_callbacks.c:120:6:periodic_callbacks__1000Hz	16	static

@@ -11,18 +11,11 @@ static bool at_the_destination = false;
 bool car_stopped = false;
 bool destination_reached() { return at_the_destination; }
 
-void driver_process_geo_data__process_input(high_sys_data *high_sys_data) {
-  geo_destination_angle = high_sys_data->HEADING;
-  geo_destination_distance = high_sys_data->DISTANCE;
-  at_the_destination = false;
+static void __get_motor_data_to_stop(driver_to_motor_data *motor_data) {
+  motor_data->MOTOR_direction = 0;
+  motor_data->MOTOR_speed = 0;
   return;
 }
-
-//static void __get_motor_data_to_stop(dbc_DRIVER_TO_MOTOR_s *motor_data) {
-//  motor_data->MOTOR_direction = 0;
-//  motor_data->MOTOR_speed = 0;
-//  return;
-//}
 
 static float get_speed_from_angle(uint16_t angle) {
   float speed;
@@ -202,8 +195,16 @@ static void __get_motor_commands(driver_to_motor_data *motor_data) {
   }
 }
 
-//dbc_DRIVER_TO_MOTOR_s driver_process_geo_data__get_motor_data() {
-//  dbc_DRIVER_TO_MOTOR_s motor_data = {.MOTOR_direction = 0, .MOTOR_speed = 0};
-//  __get_motor_commands(&motor_data);
-//  return motor_data;
-//}
+driver_to_motor_data driver_process_geo_data__get_motor_data() {
+	driver_to_motor_data motor_data = {.MOTOR_direction = 0, .MOTOR_speed = 0};
+  __get_motor_commands(&motor_data);
+  return motor_data;
+}
+
+
+void driver_process_geo_data__process_input(high_sys_data *high_sys_data) {
+  geo_destination_angle = high_sys_data->HEADING;
+  geo_destination_distance = high_sys_data->DISTANCE;
+  at_the_destination = false;
+  return;
+}

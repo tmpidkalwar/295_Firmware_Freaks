@@ -1,4 +1,4 @@
-motor_esc.c:138:6:motor_esc__control_speed	16	static
+motor_esc.c:138:6:motor_esc__control_speed	24	static
 motor_esc.c:263:6:motor_esc__maintain_speed	16	static
 motor_esc.c:279:6:motor_esc__stop_motor	8	static
 motor_esc.c:281:6:motor_esc__steer_handler	24	static

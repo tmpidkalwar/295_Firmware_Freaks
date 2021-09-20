@@ -4,6 +4,8 @@
 #include "task.h"
 
 #include "periodic_callbacks.h"
+
+#include "stm32f4xx_hal.h"
 /// Task data structure of each periodic task
 typedef struct {
   /// Task uses vTaskDelayUntil() to carry out its periodic callback
@@ -56,8 +58,7 @@ static void periodic_scheduler__check_flag(periodic_scheduler_s *periodic_task, 
     if (periodic_task->task_finished_flag) {
       periodic_task->task_finished_flag = false;
     } else {
-    	// TODO:: Check how to do system reset here
-      //NVIC_SystemReset();
+      HAL_NVIC_SystemReset();
     }
   }
 }

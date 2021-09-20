@@ -136,127 +136,127 @@ float calculated_pwm_dc = 15;
 static uint8_t reverse_counter = 0;
 
 void motor_esc__control_speed(float motor_speed) {
-//  int current_speed_from_enc = motor_encoder__get_speed();
-//  if (motor_speed <= 0) {
-//    boost_pwm = false;
-//    reverse_counter++;
-//    if (reverse_flag) {
-//      calculated_pwm_dc = PWM_REVERSE;
-////      if (motor_speed < 0)
-////        gpio__set(buzzer);
-//    }
-//
-//    if (reverse_counter >= 1 && (!reverse_flag)) {
-//      //      received_speed = SPEED_R;
-//      if (reverse_counter < 8) {
-//        calculated_pwm_dc = PWM_FULL_REVERSE;
-////        gpio__set(mid_ind);
-//      }
-//      if (reverse_counter >= 8 && reverse_counter < 11) {
-//        calculated_pwm_dc = PWM_NEUTRAL;
-//      }
-//      if (reverse_counter >= 11) {
-//        if (motor_encoder__get_rps() != 0) {
-//          reverse_counter = 9;
-//        } else {
-//          calculated_pwm_dc = PWM_REVERSE;
-//          reverse_flag = true;
-//          reverse_counter = 0;
-//        }
-//      }
-////      gpio__reset(board_io__get_led1());
-//    }
-//  }
-//  // HERE END
-//  else {
-//    reverse_flag = false;
-//    reverse_counter = 0;
-////    gpio__set(board_io__get_led1());
-////    gpio__reset(buzzer);
-//
-//    static uint8_t boost_count = 0;
-//    if (motor_encoder__get_rps() == 0) {
-//      boost_count++;
-//      if (boost_count > 65 && boost_count < 76) {
-//        boost_pwm = true;
-//      } else {
-//        boost_pwm = false;
-//      }
-//    } else {
-//      boost_count = 0;
-//      boost_pwm = false;
-//    }
-//  }
-//
-//  if (motor_speed >= 0 && motor_speed < (float)(0.5)) {
-//    if (!hard_brake) {
-//      hard_brake = true;
-//      received_speed = SPEED_ZERO;
-//      calculated_pwm_dc = PWM_FULL_REVERSE;
-//
-//    } else {
-//      calculated_pwm_dc = PWM_NEUTRAL;
-//    }
-//  } else if (motor_speed >= (float)(0.5) && motor_speed < 1) {
-//    hard_brake = false;
-//    received_speed = SPEED_L1;
-//    calculated_pwm_dc = PWM_SPEED_1;
-//  } else if (motor_speed >= 1 && motor_speed < 2) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_2;
-//  } else if (motor_speed >= 2 && motor_speed < 3) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_3;
-//  } else if (motor_speed >= 3 && motor_speed < 4) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_4;
-//  } else if (motor_speed >= 4 && motor_speed < 5) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_5;
-//  } else if (motor_speed >= 5 && motor_speed < 6) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_6;
-//  } else if (motor_speed >= 6 && motor_speed < 7) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_7;
-//  } else if (motor_speed >= 7 && motor_speed < 8) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_8;
-//  } else if (motor_speed >= 8 && motor_speed < 9) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_9;
-//  } else if (motor_speed >= 9 && motor_speed < 10) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_10;
-//  } else if (motor_speed >= 10 && motor_speed < 11) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_11;
-//  } else if (motor_speed >= 11 && motor_speed < 12) {
-//    hard_brake = false;
-//    received_speed = SPEED_L2;
-//    calculated_pwm_dc = PWM_SPEED_12;
-//  } else if (motor_speed >= 12) {
-//    hard_brake = false;
-//    received_speed = SPEED_L3;
-//    calculated_pwm_dc = PWM_SPEED_13;
-//  } else {
-//    // received_speed = SPEED_ZERO;
-//    // calculated_pwm_dc = 15;
-//  }
-//  // }
-//  //  }
+  int current_speed_from_enc = motor_encoder__get_speed();
+  if (motor_speed <= 0) {
+    boost_pwm = false;
+    reverse_counter++;
+    if (reverse_flag) {
+      calculated_pwm_dc = PWM_REVERSE;
+//      if (motor_speed < 0)
+//        gpio__set(buzzer);
+    }
 
-  motor_esc__set_motor_speed(motor_speed);
+    if (reverse_counter >= 1 && (!reverse_flag)) {
+      //      received_speed = SPEED_R;
+      if (reverse_counter < 8) {
+        calculated_pwm_dc = PWM_FULL_REVERSE;
+//        gpio__set(mid_ind);
+      }
+      if (reverse_counter >= 8 && reverse_counter < 11) {
+        calculated_pwm_dc = PWM_NEUTRAL;
+      }
+      if (reverse_counter >= 11) {
+        if (motor_encoder__get_rps() != 0) {
+          reverse_counter = 9;
+        } else {
+          calculated_pwm_dc = PWM_REVERSE;
+          reverse_flag = true;
+          reverse_counter = 0;
+        }
+      }
+//      gpio__reset(board_io__get_led1());
+    }
+  }
+  // HERE END
+  else {
+    reverse_flag = false;
+    reverse_counter = 0;
+//    gpio__set(board_io__get_led1());
+//    gpio__reset(buzzer);
+
+    static uint8_t boost_count = 0;
+    if (motor_encoder__get_rps() == 0) {
+      boost_count++;
+      if (boost_count > 65 && boost_count < 76) {
+        boost_pwm = true;
+      } else {
+        boost_pwm = false;
+      }
+    } else {
+      boost_count = 0;
+      boost_pwm = false;
+    }
+  }
+
+  if (motor_speed >= 0 && motor_speed < (float)(0.5)) {
+    if (!hard_brake) {
+      hard_brake = true;
+      received_speed = SPEED_ZERO;
+      calculated_pwm_dc = PWM_FULL_REVERSE;
+
+    } else {
+      calculated_pwm_dc = PWM_NEUTRAL;
+    }
+  } else if (motor_speed >= (float)(0.5) && motor_speed < 1) {
+    hard_brake = false;
+    received_speed = SPEED_L1;
+    calculated_pwm_dc = PWM_SPEED_1;
+  } else if (motor_speed >= 1 && motor_speed < 2) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_2;
+  } else if (motor_speed >= 2 && motor_speed < 3) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_3;
+  } else if (motor_speed >= 3 && motor_speed < 4) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_4;
+  } else if (motor_speed >= 4 && motor_speed < 5) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_5;
+  } else if (motor_speed >= 5 && motor_speed < 6) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_6;
+  } else if (motor_speed >= 6 && motor_speed < 7) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_7;
+  } else if (motor_speed >= 7 && motor_speed < 8) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_8;
+  } else if (motor_speed >= 8 && motor_speed < 9) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_9;
+  } else if (motor_speed >= 9 && motor_speed < 10) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_10;
+  } else if (motor_speed >= 10 && motor_speed < 11) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_11;
+  } else if (motor_speed >= 11 && motor_speed < 12) {
+    hard_brake = false;
+    received_speed = SPEED_L2;
+    calculated_pwm_dc = PWM_SPEED_12;
+  } else if (motor_speed >= 12) {
+    hard_brake = false;
+    received_speed = SPEED_L3;
+    calculated_pwm_dc = PWM_SPEED_13;
+  } else {
+    // received_speed = SPEED_ZERO;
+    // calculated_pwm_dc = 15;
+  }
+  // }
+  //  }
+
+  motor_esc__set_motor_speed(calculated_pwm_dc);
 }
 
 
@@ -398,17 +398,17 @@ float get_servo_motor_pwm() { return steer_pwm_val; }
 // Private Functions
 static void motor_esc__set_steer_angle(float servo_pwm_val) {
   //  fprintf(stderr, " Current pwm val on servo : %f", steer_pwm_val);
-  steer_pwm_val = 5;//servo_pwm_val;
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, servo_pwm_val);  //Set Servo Duty cycle
+  steer_pwm_val = servo_pwm_val;
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 100*servo_pwm_val);  //Set Servo Duty cycle
 }
 
 static void motor_esc__set_motor_speed(float motor_speed) {
   calculated_pwm_dc = motor_speed;
-  // fprintf(stderr, "Current DC Pwm : %f\n", calculated_pwm_dc);
+//  // fprintf(stderr, "Current DC Pwm : %f\n", calculated_pwm_dc);
 //  if (boost_pwm && (motor_speed > 15.7f)) {
 //    motor_speed = motor_speed + 0.25;
 //    boost_pwm = false;
 //  }
   // Pin Congiguration: PA 6
-  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, motor_speed);  //Set DC motor Duty cycle
+  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 100*motor_speed);  //Set DC motor Duty cycle
 }

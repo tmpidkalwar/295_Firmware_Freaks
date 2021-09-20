@@ -29,6 +29,6 @@ typedef struct {
 }driver_to_motor_data;
 
 void driver_process_geo_data__process_input(high_sys_data *high_sys_data);
-//dbc_DRIVER_TO_MOTOR_s driver_process_geo_data__get_motor_data(void);
+driver_to_motor_data driver_process_geo_data__get_motor_data(void);
 bool destination_reached();
 // dbc_DRIVER_BROADCAST_s driver_get_broadcast_data(void);
