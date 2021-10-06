@@ -1,0 +1,13 @@
+
+global_costmap:
+
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 3.0
+  static_map: false
+  rolling_window: true
+  inflation_radius: 1.75
+  cost_scaling_factor: 5.58
+  width: 100.0
+  height: 100.0
