@@ -33,17 +33,18 @@ class navigation_exp_node:
         #    time.sleep(1)
 
     def cmd_vel_callback(self, data):
-        print(data.angular.z)
-        print(data.linear.x)
-        data.angular.z=10
-        data.linear.x=10
+        print("angular {0}".format(data.angular.z))
+        print("linear {0}".format(data.linear.x))
+        temp = 255
         self.steering_angle =  data.angular.z
-        self.desire_velocity = data.linear.x * 2.237
-        self.steering_angle=round(self.steering_angle)
-        self.desire_velocity=round(self.desire_velocity)
+	self.desire_velocity = data.linear.x
+        self.steering_angle=(round(self.steering_angle,2)*100)+100
+        self.desire_velocity=(round(self.desire_velocity,2)*100)+10
+	print("angular_final {0}".format(self.steering_angle))
+        print("linear_final {0}".format(self.desire_velocity))
         #print(serial_port.read())
         string = b''
-        values=(self.steering_angle,self.desire_velocity)
+        values=(temp,self.desire_velocity,self.steering_angle)
         for i in values:
             string += struct.pack('!B',i)
 
