@@ -1,0 +1,8 @@
+prefix=/home/jetson-tx2/catkin_ws/install
+
+Name: rtabmap_node
+Description: Description of rtabmap_node
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

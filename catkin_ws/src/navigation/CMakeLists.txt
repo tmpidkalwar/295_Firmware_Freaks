@@ -223,8 +223,8 @@ include_directories(
 #add_executable(build_map ../navigation/src/build_map.cpp)
 #target_link_libraries(build_map ${catkin_LIBRARIES})
 
-add_executable(robot_pose_publisher ../navigation/src/robot_pose_publisher.cpp)
-target_link_libraries(robot_pose_publisher ${catkin_LIBRARIES})
+#add_executable(robot_pose_publisher ../navigation/src/robot_pose_publisher.cpp)
+#target_link_libraries(robot_pose_publisher ${catkin_LIBRARIES})
 
 # add_executable(vehicle_init_pose ../navigation/src/vehicle_init_pose.cpp)
  #target_link_libraries(vehicle_init_pose ${catkin_LIBRARIES})

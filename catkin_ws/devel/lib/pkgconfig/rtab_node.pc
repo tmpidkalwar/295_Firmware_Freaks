@@ -1,0 +1,8 @@
+prefix=/home/jetson-tx2/catkin_ws/devel
+
+Name: rtab_node
+Description: Description of rtab_node
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

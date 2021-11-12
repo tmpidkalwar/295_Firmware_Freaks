@@ -14,7 +14,7 @@
 
   <!--  <node pkg="tf" type="static_transform_publisher" name="camera_base_link" args="0 0 -1.65 0 0 0 zed_camera_center base_link  50" /> -->
 
-    <node pkg="tf" type="static_transform_publisher" name="laser_base_link"  args="0 0 -1.15 0 0 0 zed_camera_center laser_base 50" />
+    <node pkg="tf" type="static_transform_publisher" name="laser_base_link"  args="0 0 -0.5 0 0 0 zed_camera_center laser_base 50" />
 
     <!--    point cloud to laser scan-->
     <node pkg="pointcloud_to_laserscan" name="pointcloud_to_laserscan_node" type="pointcloud_to_laserscan_node" output="screen" >

@@ -40,7 +40,7 @@ Grid:
     CellSize:               0.05
     ClusterRadius:          0.1
     MinClusterSize:         3
-    DepthDecimation:        1
+    DepthDecimation:        0.01
     DepthRoiRatios:         [0.0, 0.0, 0.0, 0.0]
     FootprintHeight:        2.0
     FootprintLength:        0.18

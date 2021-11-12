@@ -10,8 +10,8 @@ local_costmap:
   publish_frequency: 5.0
   static_map: false
   rolling_window: true
-  width: 15.0
-  height: 10.0
+  width: 100.0
+  height: 100.0
   resolution: 0.080
 
   inflation_radius: 0.25
@@ -40,8 +40,8 @@ local_costmap:
     expected_update_rate: 15.0,
     marking: false,               # the sensor can't mark obstacles
     clearing: true,               # the sensor only clear obstacles
-    min_obstacle_height: 0.45,
-    max_obstacle_height: 1.75,
+    min_obstacle_height: -9999.99,
+    max_obstacle_height: 9999.99,
     obstacle_range: 10,           # range of point cloud is less than lidar.
     observation_persistence: 3.0
   }

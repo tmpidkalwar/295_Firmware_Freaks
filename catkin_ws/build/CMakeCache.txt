@@ -623,6 +623,12 @@ navigation_BINARY_DIR:STATIC=/home/jetson-tx2/catkin_ws/build/navigation
 //Value Computed by CMake
 navigation_SOURCE_DIR:STATIC=/home/jetson-tx2/catkin_ws/src/navigation
 
+//Value Computed by CMake
+navigation_exp_BINARY_DIR:STATIC=/home/jetson-tx2/catkin_ws/build/navigation_exp
+
+//Value Computed by CMake
+navigation_exp_SOURCE_DIR:STATIC=/home/jetson-tx2/catkin_ws/src/navigation_exp
+
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/melodic/share/nodelet/cmake
 
@@ -694,6 +700,18 @@ rosserial_python_DIR:PATH=/opt/ros/melodic/share/rosserial_python/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
+
+//Value Computed by CMake
+rtab_node_BINARY_DIR:STATIC=/home/jetson-tx2/catkin_ws/build/rtab_node
+
+//Value Computed by CMake
+rtab_node_SOURCE_DIR:STATIC=/home/jetson-tx2/catkin_ws/src/rtab_node
+
+//Value Computed by CMake
+rtabmap_node_BINARY_DIR:STATIC=/home/jetson-tx2/catkin_ws/build/rtabmap_node
+
+//Value Computed by CMake
+rtabmap_node_SOURCE_DIR:STATIC=/home/jetson-tx2/catkin_ws/src/rtabmap_node
 
 //The directory containing a CMake configuration file for rviz.
 rviz_DIR:PATH=/opt/ros/melodic/share/rviz/cmake
@@ -975,7 +993,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

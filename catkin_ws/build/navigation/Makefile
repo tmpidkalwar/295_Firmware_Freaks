@@ -333,21 +333,6 @@ rosserial_msgs_generate_messages_eus/fast:
 .PHONY : rosserial_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-navigation/CMakeFiles/robot_pose_publisher.dir/rule:
-	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/CMakeFiles/robot_pose_publisher.dir/rule
-.PHONY : navigation/CMakeFiles/robot_pose_publisher.dir/rule
-
-# Convenience name for target.
-robot_pose_publisher: navigation/CMakeFiles/robot_pose_publisher.dir/rule
-
-.PHONY : robot_pose_publisher
-
-# fast build rule for target.
-robot_pose_publisher/fast:
-	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f navigation/CMakeFiles/robot_pose_publisher.dir/build.make navigation/CMakeFiles/robot_pose_publisher.dir/build
-.PHONY : robot_pose_publisher/fast
-
-# Convenience name for target.
 navigation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
 	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 .PHONY : navigation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
@@ -707,33 +692,6 @@ navigation_gennodejs/fast:
 	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f navigation/CMakeFiles/navigation_gennodejs.dir/build.make navigation/CMakeFiles/navigation_gennodejs.dir/build
 .PHONY : navigation_gennodejs/fast
 
-src/robot_pose_publisher.o: src/robot_pose_publisher.cpp.o
-
-.PHONY : src/robot_pose_publisher.o
-
-# target to build an object file
-src/robot_pose_publisher.cpp.o:
-	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f navigation/CMakeFiles/robot_pose_publisher.dir/build.make navigation/CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.o
-.PHONY : src/robot_pose_publisher.cpp.o
-
-src/robot_pose_publisher.i: src/robot_pose_publisher.cpp.i
-
-.PHONY : src/robot_pose_publisher.i
-
-# target to preprocess a source file
-src/robot_pose_publisher.cpp.i:
-	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f navigation/CMakeFiles/robot_pose_publisher.dir/build.make navigation/CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.i
-.PHONY : src/robot_pose_publisher.cpp.i
-
-src/robot_pose_publisher.s: src/robot_pose_publisher.cpp.s
-
-.PHONY : src/robot_pose_publisher.s
-
-# target to generate assembly for a file
-src/robot_pose_publisher.cpp.s:
-	cd /home/jetson-tx2/catkin_ws/build && $(MAKE) -f navigation/CMakeFiles/robot_pose_publisher.dir/build.make navigation/CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.s
-.PHONY : src/robot_pose_publisher.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -757,7 +715,6 @@ help:
 	@echo "... navigation_generate_messages_py"
 	@echo "... rosserial_msgs_generate_messages_cpp"
 	@echo "... rosserial_msgs_generate_messages_eus"
-	@echo "... robot_pose_publisher"
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... costmap_2d_generate_messages_py"
 	@echo "... costmap_2d_generate_messages_cpp"
@@ -783,9 +740,6 @@ help:
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... navigation_generate_messages_nodejs"
 	@echo "... navigation_gennodejs"
-	@echo "... src/robot_pose_publisher.o"
-	@echo "... src/robot_pose_publisher.i"
-	@echo "... src/robot_pose_publisher.s"
 .PHONY : help
 
 
