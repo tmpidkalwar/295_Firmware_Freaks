@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,6 +44,9 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+ADC_HandleTypeDef hadc2;
+
 DAC_HandleTypeDef hdac;
 
 UART_HandleTypeDef huart4;
@@ -63,6 +67,8 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DAC_Init(void);
 static void MX_UART4_Init(void);
+static void MX_ADC1_Init(void);
+static void MX_ADC2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -71,6 +77,22 @@ static void MX_UART4_Init(void);
 /* USER CODE BEGIN 0 */
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+uint16_t get_adc_value(ADC_HandleTypeDef adc){
+	uint16_t adc_val;
+	HAL_ADC_Start(&adc);
+	HAL_ADC_PollForConversion(&adc, 20);
+	adc_val = HAL_ADC_GetValue(&adc);
+	return adc_val;
+}
+
+bool isManual(uint16_t x, uint16_t y)
+{
+	if((x>3400 || x<2900) || (y>3400 || y<2900))
+		return true;
+	else
+		return false;
 }
 
 /* USER CODE END 0 */
@@ -82,6 +104,8 @@ float map(float x, float in_min, float in_max, float out_min, float out_max) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	uint16_t x_d,y_d;
+
 	uint8_t byte[6];
 	char buff[100];
 	uint8_t lin_vel;
@@ -110,6 +134,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_DAC_Init();
   MX_UART4_Init();
+  MX_ADC1_Init();
+  MX_ADC2_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_DAC_Start(&hdac, DAC_CHANNEL_1);
@@ -124,47 +150,95 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  status = HAL_UART_Receive(&huart4, byte, 6, 2000);
+	  static bool manual = false;
+	  static bool cont = false;
+	  static uint32_t transition_cnt=0;
+	  x_d = get_adc_value(hadc2);
+	  y_d = get_adc_value(hadc1);
 
-	  if(status==3){
-		  lin_vel=10;
-		  ang_vel=100;
-	  }else{
-		  for(int i=0;i<4;i++){
-			  if(byte[i]==255){
-				  lin_vel=byte[i+1];
-				  ang_vel=byte[i+2];
-				  break;
+	  sprintf(buff, "x_d = %u y_d = %u\r\n",x_d,y_d);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
+
+	  if(!isManual(x_d,y_d))
+	  {
+		  if(manual)
+		  {
+			  if(++transition_cnt< 150)
+				  cont=true;
+			  else{
+				  manual = false;
+				  cont=false;
+				  transition_cnt=0;
+			  }
+		  }
+		  else{
+			  status = HAL_UART_Receive(&huart4, byte, 6, 2000);
+
+			  if(status==3){
+				  lin_vel=10;
+				  ang_vel=100;
+			  }else{
+				  for(int i=0;i<4;i++){
+					  if(byte[i]==255){
+						  lin_vel=byte[i+1];
+						  ang_vel=byte[i+2];
+						  break;
+					  }
+				  }
+			  }
+
+			  if(lin_vel<10){
+				  x_out=2.1;
+			  }else if(lin_vel==10){
+				  x_out=2.5;
+			  }else{
+				  x_out = map((float)lin_vel,10,90,2.8,3);
+			  }
+
+			  if(ang_vel==100){
+				  y_out=2.5;
+			  }else if(ang_vel<100){
+				  y_out = map((float)ang_vel,0,99,1.9,2.2);
+			  }else if(ang_vel>100){
+				  y_out = map((float)ang_vel,101,200,2.8,3.3);
 			  }
 		  }
 	  }
 
-	  if(lin_vel<10){
-		  x_out=2.1;
-	  }else if(lin_vel==10){
-		  x_out=2.5;
-	  }else{
-		  x_out = map((float)lin_vel,10,90,2.8,3);
+	  if(isManual(x_d,y_d) || cont){
+		 if(!cont)
+			 transition_cnt = 0;
+
+		  manual = true;
+		  if(x_d<2900){
+			  x_out=2.1;
+		  }else if(x_d>3400){
+			  x_out=map((float)x_d,3401,4096,2.8,3);
+		  }else{
+			  x_out = 2.5;
+		  }
+
+		  if(y_d<2900){
+			  y_out=map((float)y_d,1500,2899,1.9,2.2);
+		  }else if(y_d>3400){
+			  y_out = map((float)y_d,3401,4096,2.8,3.1);
+		  }else{
+			  y_out = 2.5;
+		  }
 	  }
 
-	  if(ang_vel==100){
-		  y_out=2.5;
-	  }else if(ang_vel<100){
-		  y_out = map((float)ang_vel,0,99,1.9,2.2);
-	  }else if(ang_vel>100){
-		  y_out = map((float)ang_vel,101,200,2.8,3.3);
-	  }
+
 
 	  int x_in = x_out*(0xfff+1)/3.3;
 	  int y_in = y_out*(0xfff+1)/3.3;
 	  HAL_DACEx_DualSetValue(&hdac, DAC_ALIGN_12B_R, x_in, y_in);
 
-    /* USER CODE END WHILE */
+	  /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-  //	  sprintf(buff, "Linear = %u Angular = %u\r\n",lin_vel,ang_vel);
-  //	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
-  	  HAL_Delay(50);
+	  /* USER CODE BEGIN 3 */
+	  //sprintf(buff, "Linear = %u Angular = %u\r\n",lin_vel,ang_vel);
+	  //HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
+	  HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
@@ -211,6 +285,106 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time. 
+  */
+  sConfig.Channel = ADC_CHANNEL_11;
+  sConfig.Rank = 1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
+}
+
+/**
+  * @brief ADC2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC2_Init(void)
+{
+
+  /* USER CODE BEGIN ADC2_Init 0 */
+
+  /* USER CODE END ADC2_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC2_Init 1 */
+
+  /* USER CODE END ADC2_Init 1 */
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
+  */
+  hadc2.Instance = ADC2;
+  hadc2.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+  hadc2.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc2.Init.ScanConvMode = DISABLE;
+  hadc2.Init.ContinuousConvMode = DISABLE;
+  hadc2.Init.DiscontinuousConvMode = DISABLE;
+  hadc2.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc2.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc2.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc2.Init.NbrOfConversion = 1;
+  hadc2.Init.DMAContinuousRequests = DISABLE;
+  hadc2.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  if (HAL_ADC_Init(&hadc2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time. 
+  */
+  sConfig.Channel = ADC_CHANNEL_10;
+  sConfig.Rank = 1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC2_Init 2 */
+
+  /* USER CODE END ADC2_Init 2 */
+
 }
 
 /**
