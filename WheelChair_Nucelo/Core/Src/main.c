@@ -20,7 +20,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -49,8 +48,6 @@ DAC_HandleTypeDef hdac;
 UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart2;
 
-osThreadId uartTaskHandle;
-osThreadId lowlevelTaskHandle;
 /* USER CODE BEGIN PV */
 
 // x value determines forward/reverse motion
@@ -66,9 +63,6 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DAC_Init(void);
 static void MX_UART4_Init(void);
-void StarUartTask(void const * argument);
-void StartLowlevelTask(void const * argument);
-
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -88,7 +82,11 @@ float map(float x, float in_min, float in_max, float out_min, float out_max) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	uint8_t byte[6];
+	char buff[100];
+	uint8_t lin_vel;
+	uint8_t ang_vel;
+	int status;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -122,47 +120,51 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
-  /* Create the thread(s) */
-  /* definition and creation of uartTask */
-  osThreadDef(uartTask, StarUartTask, osPriorityNormal, 0, 128);
-  uartTaskHandle = osThreadCreate(osThread(uartTask), NULL);
-
-  /* definition and creation of lowlevelTask */
-  osThreadDef(lowlevelTask, StartLowlevelTask, osPriorityNormal, 0, 128);
-  lowlevelTaskHandle = osThreadCreate(osThread(lowlevelTask), NULL);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* Start scheduler */
-  osKernelStart();
- 
-  /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  status = HAL_UART_Receive(&huart4, byte, 6, 2000);
+
+	  if(status==3){
+		  lin_vel=10;
+		  ang_vel=100;
+	  }else{
+		  for(int i=0;i<4;i++){
+			  if(byte[i]==255){
+				  lin_vel=byte[i+1];
+				  ang_vel=byte[i+2];
+				  break;
+			  }
+		  }
+	  }
+
+	  if(lin_vel<10){
+		  x_out=2.1;
+	  }else if(lin_vel==10){
+		  x_out=2.5;
+	  }else{
+		  x_out = map((float)lin_vel,10,90,2.8,3);
+	  }
+
+	  if(ang_vel==100){
+		  y_out=2.5;
+	  }else if(ang_vel<100){
+		  y_out = map((float)ang_vel,0,99,1.9,2.2);
+	  }else if(ang_vel>100){
+		  y_out = map((float)ang_vel,101,200,2.8,3.3);
+	  }
+
+	  int x_in = x_out*(0xfff+1)/3.3;
+	  int y_in = y_out*(0xfff+1)/3.3;
+	  HAL_DACEx_DualSetValue(&hdac, DAC_ALIGN_12B_R, x_in, y_in);
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+  //	  sprintf(buff, "Linear = %u Angular = %u\r\n",lin_vel,ang_vel);
+  //	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
+  	  HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
@@ -357,102 +359,6 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
-
-/* USER CODE BEGIN Header_StarUartTask */
-/**
-  * @brief  Function implementing the uartTask thread.
-  * @param  argument: Not used 
-  * @retval None
-  */
-/* USER CODE END Header_StarUartTask */
-void StarUartTask(void const * argument)
-{
-  /* USER CODE BEGIN 5 */
-	uint8_t byte[6];
-	char buff[100];
-	uint8_t lin_vel;
-	uint8_t ang_vel;
-	int status;
-  /* Infinite loop */
-  for(;;)
-  {
-	 // byte[0] = 255; byte[1] = 10; byte[2] = 100;
-
-	  status = HAL_UART_Receive(&huart4, byte, 6, 2000);
-
-//	  sprintf(buff, "status %d\r\n",status);
-//	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
-//	  HAL_Delay(500);
-
-	  if(status==3){
-		  lin_vel=10;
-		  ang_vel=100;
-	  }else{
-		  for(int i=0;i<4;i++){
-			  if(byte[i]==255){
-				  lin_vel=byte[i+1];
-				  ang_vel=byte[i+2];
-				  break;
-			  }
-		  }
-	  }
-
-	  if(lin_vel<10){
-		  x_out=2.1;
-	  }else if(lin_vel==10){
-		  x_out=2.5;
-	  }else{
-		  x_out = map((float)lin_vel,10,90,2.8,3);
-	  }
-
-	  if(ang_vel==100){
-		  y_out=2.5;
-	  }else if(ang_vel<100){
-		  y_out = map((float)ang_vel,0,99,1.9,2.2);
-	  }else if(ang_vel>100){
-		  y_out = map((float)ang_vel,101,200,2.8,3.3);
-	  }
-
-	  int x_in = x_out*(0xfff+1)/3.3;
-	  int y_in = y_out*(0xfff+1)/3.3;
-	  HAL_DACEx_DualSetValue(&hdac, DAC_ALIGN_12B_R, x_in, y_in);
-
-//	  sprintf(buff, "Linear = %u Angular = %u\r\n",lin_vel,ang_vel);
-//	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
-//	  HAL_Delay(500);
-
-  }
-  /* USER CODE END 5 */ 
-}
-
-/* USER CODE BEGIN Header_StartLowlevelTask */
-/**
-* @brief Function implementing the lowlevelTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartLowlevelTask */
-void StartLowlevelTask(void const * argument)
-{
-  /* USER CODE BEGIN StartLowlevelTask */
-//	int x_in;
-//	int y_in;
-//	char buff[50];
-  /* Infinite loop */
-  for(;;)
-  {
-//	  int temp1 = (int)(x_out*10);
-//	  int temp2 = (int)(y_out*10);
-//	sprintf(buff, "x_out:%d y_out:%d\r\n",temp1,temp2);
-//	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, strlen(buff), HAL_MAX_DELAY);
-//	  HAL_Delay(500);
-//	x_in = x_out*(0xfff+1)/3.3;
-//	y_in = y_out*(0xfff+1)/3.3;
-//	HAL_DACEx_DualSetValue(&hdac, DAC_ALIGN_12B_R, x_in, y_in);
-    osDelay(1);
-  }
-  /* USER CODE END StartLowlevelTask */
-}
 
  /**
   * @brief  Period elapsed callback in non blocking mode
