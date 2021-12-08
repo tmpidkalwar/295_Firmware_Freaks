@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/zed_tracking_sub_tutorial.cpp
+/home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/zed_tracking_sub_tutorial.cpp
 geometry_msgs/PoseStamped.h
 -
 nav_msgs/Odometry.h
@@ -14,9 +14,9 @@ nav_msgs/Odometry.h
 ros/ros.h
 -
 tf2/LinearMath/Matrix3x3.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/tf2/LinearMath/Matrix3x3.h
+/home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/tf2/LinearMath/Matrix3x3.h
 tf2/LinearMath/Quaternion.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/tf2/LinearMath/Quaternion.h
+/home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/src/tf2/LinearMath/Quaternion.h
 string
 -
 

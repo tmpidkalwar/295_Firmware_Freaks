@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test
+# Install script for directory: /home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_test.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/freaks/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_test.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_sync_test/cmake" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_testConfig.cmake"
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_testConfig-version.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_testConfig.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/catkin_generated/installspace/zed_sync_testConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_sync_test" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_sync_test" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libZEDSyncTest.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jetson-tx2/catkin_ws/devel/lib/libZEDSyncTest.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/freaks/catkin_ws/devel/lib/libZEDSyncTest.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libZEDSyncTest.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libZEDSyncTest.so")
     file(RPATH_CHANGE
@@ -73,6 +73,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_sync_test" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/nodelet_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_sync_test" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/nodelet_plugins.xml")
 endif()
 

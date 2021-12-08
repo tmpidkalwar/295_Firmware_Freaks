@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_wrapper/src/zed_wrapper_node.cpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_wrapper/src/zed_wrapper_node.cpp
 nodelet/loader.h
 -
 ros/ros.h

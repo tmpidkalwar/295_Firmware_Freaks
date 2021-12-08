@@ -1,0 +1,5 @@
+serial_interface
+/home/freaks/catkin_ws/devel/.private/serial_interface/cmake.lock /home/freaks/catkin_ws/devel/./cmake.lock
+/home/freaks/catkin_ws/devel/.private/serial_interface/share/serial_interface/cmake/serial_interfaceConfig-version.cmake /home/freaks/catkin_ws/devel/share/serial_interface/cmake/serial_interfaceConfig-version.cmake
+/home/freaks/catkin_ws/devel/.private/serial_interface/share/serial_interface/cmake/serial_interfaceConfig.cmake /home/freaks/catkin_ws/devel/share/serial_interface/cmake/serial_interfaceConfig.cmake
+/home/freaks/catkin_ws/devel/.private/serial_interface/lib/pkgconfig/serial_interface.pc /home/freaks/catkin_ws/devel/lib/pkgconfig/serial_interface.pc

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson-tx2/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/freaks/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson-tx2/catkin_ws/build
+CMAKE_BINARY_DIR = /home/freaks/catkin_ws/build
 
 # Utility rule file for rviz_plugin_zed_od_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/jetson-tx2/catkin_ws/build
 include zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/progress.make
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC, UIC and RCC for target rviz_plugin_zed_od"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/cmake -E cmake_autogen /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir Release
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC, UIC and RCC for target rviz_plugin_zed_od"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/cmake -E cmake_autogen /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir Release
 
 rviz_plugin_zed_od_autogen: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen
 rviz_plugin_zed_od_autogen: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/build.make
@@ -68,10 +68,10 @@ zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/bu
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/build
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/clean:
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -P CMakeFiles/rviz_plugin_zed_od_autogen.dir/cmake_clean.cmake
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -P CMakeFiles/rviz_plugin_zed_od_autogen.dir/cmake_clean.cmake
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/clean
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/depend:
-	cd /home/jetson-tx2/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson-tx2/catkin_ws/src /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od /home/jetson-tx2/catkin_ws/build /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/freaks/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/freaks/catkin_ws/src /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od /home/freaks/catkin_ws/build /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/depend
 

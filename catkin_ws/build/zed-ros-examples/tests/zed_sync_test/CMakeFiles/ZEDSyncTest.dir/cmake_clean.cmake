@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ZEDSyncTest.dir/src/rgbd_test_sync.cpp.o"
-  "/home/jetson-tx2/catkin_ws/devel/lib/libZEDSyncTest.pdb"
-  "/home/jetson-tx2/catkin_ws/devel/lib/libZEDSyncTest.so"
+  "/home/freaks/catkin_ws/devel/lib/libZEDSyncTest.pdb"
+  "/home/freaks/catkin_ws/devel/lib/libZEDSyncTest.so"
 )
 
 # Per-language clean rules from dependency scanning.

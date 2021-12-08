@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od
+# Install script for directory: /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_od.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_od.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od/cmake" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_odConfig.cmake"
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_odConfig-version.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_odConfig.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/catkin_generated/installspace/rviz_plugin_zed_odConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugin_zed_od.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugin_zed_od.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugin_zed_od.so")
     file(RPATH_CHANGE
@@ -73,14 +73,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/plugin_description.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/plugin_description.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od/images" TYPE DIRECTORY FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/images/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od/images" TYPE DIRECTORY FILES "/home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/images/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od/icons" TYPE DIRECTORY FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/icons/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugin_zed_od/icons" TYPE DIRECTORY FILES "/home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/icons/")
 endif()
 

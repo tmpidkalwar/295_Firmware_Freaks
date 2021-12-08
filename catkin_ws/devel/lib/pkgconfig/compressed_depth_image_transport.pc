@@ -1,0 +1,8 @@
+prefix=/home/freaks/catkin_ws/devel
+
+Name: compressed_depth_image_transport
+Description: Description of compressed_depth_image_transport
+Version: 1.14.0
+Cflags: -I/home/freaks/catkin_ws/devel/include -I/home/freaks/catkin_ws/src/image_transport_plugins/compressed_depth_image_transport/include -I/usr/include/opencv4
+Libs: -L${prefix}/lib -lcompressed_depth_image_transport /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_gapi.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.1.1 /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.1.1
+Requires: cv_bridge dynamic_reconfigure image_transport

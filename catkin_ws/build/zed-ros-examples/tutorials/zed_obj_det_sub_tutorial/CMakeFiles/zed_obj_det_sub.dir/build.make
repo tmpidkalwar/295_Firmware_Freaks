@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson-tx2/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/freaks/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson-tx2/catkin_ws/build
+CMAKE_BINARY_DIR = /home/freaks/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/depend.make
@@ -58,17 +58,17 @@ include zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_d
 include zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/flags.make
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/flags.make
-zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o -c /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp
+zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o: /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o -c /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.i"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp > CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.i
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp > CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.i
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.s"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp -o CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.s
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/src/zed_obj_det_sub_tutorial.cpp -o CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.s
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o.requires:
 
@@ -88,32 +88,32 @@ zed_obj_det_sub_OBJECTS = \
 # External object files for target zed_obj_det_sub
 zed_obj_det_sub_EXTERNAL_OBJECTS =
 
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/build.make
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libroscpp.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librostime.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libcpp_common.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zed_obj_det_sub.dir/link.txt --verbose=$(VERBOSE)
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/build.make
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libroscpp.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/librostime.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /opt/ros/melodic/lib/libcpp_common.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub: zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zed_obj_det_sub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/build: /home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub
+zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/build: /home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub
 
 .PHONY : zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/build
 
@@ -122,10 +122,10 @@ zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.d
 .PHONY : zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/requires
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/clean:
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/zed_obj_det_sub.dir/cmake_clean.cmake
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/zed_obj_det_sub.dir/cmake_clean.cmake
 .PHONY : zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/clean
 
 zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/depend:
-	cd /home/jetson-tx2/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson-tx2/catkin_ws/src /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial /home/jetson-tx2/catkin_ws/build /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial /home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/freaks/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/freaks/catkin_ws/src /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial /home/freaks/catkin_ws/build /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial /home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/CMakeFiles/zed_obj_det_sub.dir/depend
 

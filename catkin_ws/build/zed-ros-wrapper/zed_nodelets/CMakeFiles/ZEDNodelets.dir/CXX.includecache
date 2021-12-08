@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/BoundingBox2Df.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/BoundingBox2Df.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 zed_interfaces/Keypoint2Df.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/BoundingBox2Di.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/BoundingBox2Di.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/message_operations.h
 zed_interfaces/Keypoint2Di.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/BoundingBox3D.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/BoundingBox3D.h
 string
 -
 vector
@@ -60,7 +60,7 @@ ros/message_operations.h
 zed_interfaces/Keypoint3D.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Keypoint2Df.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Keypoint2Df.h
 string
 -
 vector
@@ -76,7 +76,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Keypoint2Di.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Keypoint2Di.h
 string
 -
 vector
@@ -92,7 +92,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Keypoint3D.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Keypoint3D.h
 string
 -
 vector
@@ -108,7 +108,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Object.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Object.h
 string
 -
 vector
@@ -136,7 +136,7 @@ zed_interfaces/Skeleton2D.h
 zed_interfaces/Skeleton3D.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/ObjectsStamped.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/ObjectsStamped.h
 string
 -
 vector
@@ -156,7 +156,7 @@ std_msgs/Header.h
 zed_interfaces/Object.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/RGBDSensors.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/RGBDSensors.h
 string
 -
 vector
@@ -186,7 +186,7 @@ sensor_msgs/Imu.h
 sensor_msgs/MagneticField.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Skeleton2D.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Skeleton2D.h
 string
 -
 vector
@@ -204,7 +204,7 @@ ros/message_operations.h
 zed_interfaces/Keypoint2Df.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/Skeleton3D.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/Skeleton3D.h
 string
 -
 vector
@@ -222,7 +222,7 @@ ros/message_operations.h
 zed_interfaces/Keypoint3D.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_odometry.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_odometry.h
 ros/service_traits.h
 -
 zed_interfaces/reset_odometryRequest.h
@@ -230,7 +230,7 @@ zed_interfaces/reset_odometryRequest.h
 zed_interfaces/reset_odometryResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_odometryRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_odometryRequest.h
 string
 -
 vector
@@ -246,7 +246,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_odometryResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_odometryResponse.h
 string
 -
 vector
@@ -262,7 +262,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_tracking.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_tracking.h
 ros/service_traits.h
 -
 zed_interfaces/reset_trackingRequest.h
@@ -270,7 +270,7 @@ zed_interfaces/reset_trackingRequest.h
 zed_interfaces/reset_trackingResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_trackingRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_trackingRequest.h
 string
 -
 vector
@@ -286,7 +286,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/reset_trackingResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/reset_trackingResponse.h
 string
 -
 vector
@@ -302,7 +302,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_3d_map.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_3d_map.h
 ros/service_traits.h
 -
 zed_interfaces/save_3d_mapRequest.h
@@ -310,7 +310,7 @@ zed_interfaces/save_3d_mapRequest.h
 zed_interfaces/save_3d_mapResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_3d_mapRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_3d_mapRequest.h
 string
 -
 vector
@@ -326,7 +326,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_3d_mapResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_3d_mapResponse.h
 string
 -
 vector
@@ -342,7 +342,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_area_memory.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_area_memory.h
 ros/service_traits.h
 -
 zed_interfaces/save_area_memoryRequest.h
@@ -350,7 +350,7 @@ zed_interfaces/save_area_memoryRequest.h
 zed_interfaces/save_area_memoryResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_area_memoryRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_area_memoryRequest.h
 string
 -
 vector
@@ -366,7 +366,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/save_area_memoryResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/save_area_memoryResponse.h
 string
 -
 vector
@@ -382,7 +382,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_led_status.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_led_status.h
 ros/service_traits.h
 -
 zed_interfaces/set_led_statusRequest.h
@@ -390,7 +390,7 @@ zed_interfaces/set_led_statusRequest.h
 zed_interfaces/set_led_statusResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_led_statusRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_led_statusRequest.h
 string
 -
 vector
@@ -406,7 +406,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_led_statusResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_led_statusResponse.h
 string
 -
 vector
@@ -422,7 +422,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_pose.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_pose.h
 ros/service_traits.h
 -
 zed_interfaces/set_poseRequest.h
@@ -430,7 +430,7 @@ zed_interfaces/set_poseRequest.h
 zed_interfaces/set_poseResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_poseRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_poseRequest.h
 string
 -
 vector
@@ -446,7 +446,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/set_poseResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/set_poseResponse.h
 string
 -
 vector
@@ -462,7 +462,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_3d_mapping.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_3d_mapping.h
 ros/service_traits.h
 -
 zed_interfaces/start_3d_mappingRequest.h
@@ -470,7 +470,7 @@ zed_interfaces/start_3d_mappingRequest.h
 zed_interfaces/start_3d_mappingResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_3d_mappingRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_3d_mappingRequest.h
 string
 -
 vector
@@ -486,7 +486,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_3d_mappingResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_3d_mappingResponse.h
 string
 -
 vector
@@ -502,7 +502,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_object_detection.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_object_detection.h
 ros/service_traits.h
 -
 zed_interfaces/start_object_detectionRequest.h
@@ -510,7 +510,7 @@ zed_interfaces/start_object_detectionRequest.h
 zed_interfaces/start_object_detectionResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_object_detectionRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_object_detectionRequest.h
 string
 -
 vector
@@ -526,7 +526,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_object_detectionResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_object_detectionResponse.h
 string
 -
 vector
@@ -542,7 +542,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_remote_stream.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_remote_stream.h
 ros/service_traits.h
 -
 zed_interfaces/start_remote_streamRequest.h
@@ -550,7 +550,7 @@ zed_interfaces/start_remote_streamRequest.h
 zed_interfaces/start_remote_streamResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_remote_streamRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_remote_streamRequest.h
 string
 -
 vector
@@ -566,7 +566,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_remote_streamResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_remote_streamResponse.h
 string
 -
 vector
@@ -582,7 +582,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_svo_recording.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_svo_recording.h
 ros/service_traits.h
 -
 zed_interfaces/start_svo_recordingRequest.h
@@ -590,7 +590,7 @@ zed_interfaces/start_svo_recordingRequest.h
 zed_interfaces/start_svo_recordingResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_svo_recordingRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_svo_recordingRequest.h
 string
 -
 vector
@@ -606,7 +606,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/start_svo_recordingResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/start_svo_recordingResponse.h
 string
 -
 vector
@@ -622,7 +622,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_3d_mapping.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_3d_mapping.h
 ros/service_traits.h
 -
 zed_interfaces/stop_3d_mappingRequest.h
@@ -630,7 +630,7 @@ zed_interfaces/stop_3d_mappingRequest.h
 zed_interfaces/stop_3d_mappingResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_3d_mappingRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_3d_mappingRequest.h
 string
 -
 vector
@@ -646,7 +646,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_3d_mappingResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_3d_mappingResponse.h
 string
 -
 vector
@@ -662,7 +662,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_object_detection.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_object_detection.h
 ros/service_traits.h
 -
 zed_interfaces/stop_object_detectionRequest.h
@@ -670,7 +670,7 @@ zed_interfaces/stop_object_detectionRequest.h
 zed_interfaces/stop_object_detectionResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_object_detectionRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_object_detectionRequest.h
 string
 -
 vector
@@ -686,7 +686,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_object_detectionResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_object_detectionResponse.h
 string
 -
 vector
@@ -702,7 +702,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_remote_stream.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_remote_stream.h
 ros/service_traits.h
 -
 zed_interfaces/stop_remote_streamRequest.h
@@ -710,7 +710,7 @@ zed_interfaces/stop_remote_streamRequest.h
 zed_interfaces/stop_remote_streamResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_remote_streamRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_remote_streamRequest.h
 string
 -
 vector
@@ -726,7 +726,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_remote_streamResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_remote_streamResponse.h
 string
 -
 vector
@@ -742,7 +742,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_svo_recording.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_svo_recording.h
 ros/service_traits.h
 -
 zed_interfaces/stop_svo_recordingRequest.h
@@ -750,7 +750,7 @@ zed_interfaces/stop_svo_recordingRequest.h
 zed_interfaces/stop_svo_recordingResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_svo_recordingRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_svo_recordingRequest.h
 string
 -
 vector
@@ -766,7 +766,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/stop_svo_recordingResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/stop_svo_recordingResponse.h
 string
 -
 vector
@@ -782,7 +782,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/toggle_led.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/toggle_led.h
 ros/service_traits.h
 -
 zed_interfaces/toggle_ledRequest.h
@@ -790,7 +790,7 @@ zed_interfaces/toggle_ledRequest.h
 zed_interfaces/toggle_ledResponse.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/toggle_ledRequest.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/toggle_ledRequest.h
 string
 -
 vector
@@ -806,7 +806,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_interfaces/toggle_ledResponse.h
+/home/freaks/catkin_ws/devel/include/zed_interfaces/toggle_ledResponse.h
 string
 -
 vector
@@ -822,7 +822,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/jetson-tx2/catkin_ws/devel/include/zed_nodelets/ZedConfig.h
+/home/freaks/catkin_ws/devel/include/zed_nodelets/ZedConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -840,7 +840,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/include/rgbd_sensor_demux.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/include/rgbd_sensor_demux.hpp
 nodelet/nodelet.h
 -
 ros/ros.h
@@ -860,19 +860,19 @@ image_transport/image_transport.h
 image_transport/subscriber_filter.h
 -
 zed_interfaces/RGBDSensors.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/include/zed_interfaces/RGBDSensors.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/include/zed_interfaces/RGBDSensors.h
 pluginlib/class_list_macros.h
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/src/rgbd_sensor_demux.cpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/src/rgbd_sensor_demux.cpp
 rgbd_sensor_demux.hpp
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/src/rgbd_sensor_demux.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_demux_nodelet/src/rgbd_sensor_demux.hpp
 ros/console.h
 -
 chrono
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/include/rgbd_sensor_sync.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/include/rgbd_sensor_sync.hpp
 nodelet/nodelet.h
 -
 ros/ros.h
@@ -898,19 +898,19 @@ image_transport/image_transport.h
 image_transport/subscriber_filter.h
 -
 zed_interfaces/RGBDSensors.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/include/zed_interfaces/RGBDSensors.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/include/zed_interfaces/RGBDSensors.h
 pluginlib/class_list_macros.h
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/src/rgbd_sensor_sync.cpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/src/rgbd_sensor_sync.cpp
 rgbd_sensor_sync.hpp
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/src/rgbd_sensor_sync.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/rgbd_sensors_sync_nodelet/src/rgbd_sensor_sync.hpp
 ros/console.h
 -
 chrono
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/include/sl_tools.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/include/sl_tools.h
 ros/time.h
 -
 sensor_msgs/Image.h
@@ -922,7 +922,7 @@ string
 vector
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.cpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.cpp
 sensor_msgs/image_encodings.h
 -
 sys/stat.h
@@ -936,9 +936,9 @@ sstream
 vector
 -
 sl_tools.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.h
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/include/zed_wrapper_nodelet.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/include/zed_wrapper_nodelet.hpp
 diagnostic_updater/diagnostic_updater.h
 -
 dynamic_reconfigure/server.h
@@ -964,7 +964,7 @@ tf2_ros/transform_listener.h
 sl/Camera.hpp
 -
 sl_tools.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/include/sl_tools.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/include/sl_tools.h
 zed_nodelets/ZedConfig.h
 -
 zed_interfaces/reset_odometry.h
@@ -1034,7 +1034,7 @@ thread
 pluginlib/class_list_macros.h
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.cpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.cpp
 chrono
 -
 csignal
@@ -1042,15 +1042,15 @@ csignal
 sstream
 -
 zed_wrapper_nodelet.hpp
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.hpp
 zed_wrapper_nodelet.hpp
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.hpp
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_wrapper_nodelet.hpp
 ros/console.h
 -
 zed_interfaces/Object.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_interfaces/Object.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_interfaces/Object.h
 zed_interfaces/ObjectsStamped.h
-/home/jetson-tx2/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_interfaces/ObjectsStamped.h
+/home/freaks/catkin_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/src/zed_interfaces/ObjectsStamped.h
 
 /opt/ros/melodic/include/class_loader/class_loader.hpp
 boost/bind.hpp
@@ -3338,27 +3338,27 @@ vector
 time.h
 -
 
-/usr/local/cuda-10.2/include/builtin_types.h
+/usr/local/cuda/include/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/device_types.h
+/usr/local/cuda/include/device_types.h
 driver_types.h
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 surface_types.h
-/usr/local/cuda-10.2/include/surface_types.h
+/usr/local/cuda/include/surface_types.h
 texture_types.h
-/usr/local/cuda-10.2/include/texture_types.h
+/usr/local/cuda/include/texture_types.h
 vector_types.h
-/usr/local/cuda-10.2/include/vector_types.h
+/usr/local/cuda/include/vector_types.h
 
-/usr/local/cuda-10.2/include/channel_descriptor.h
+/usr/local/cuda/include/channel_descriptor.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/crt/common_functions.h
+/usr/local/cuda/include/crt/common_functions.h
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 string.h
 -
 time.h
@@ -3372,81 +3372,81 @@ stdlib.h
 assert.h
 -
 cuda_device_runtime_api.h
-/usr/local/cuda-10.2/include/crt/cuda_device_runtime_api.h
+/usr/local/cuda/include/crt/cuda_device_runtime_api.h
 math_functions.h
-/usr/local/cuda-10.2/include/crt/math_functions.h
+/usr/local/cuda/include/crt/math_functions.h
 
-/usr/local/cuda-10.2/include/crt/device_double_functions.h
+/usr/local/cuda/include/crt/device_double_functions.h
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 device_double_functions.hpp
-/usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+/usr/local/cuda/include/crt/device_double_functions.hpp
 
-/usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+/usr/local/cuda/include/crt/device_double_functions.hpp
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/crt/device_functions.h
+/usr/local/cuda/include/crt/device_functions.h
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 device_functions.hpp
-/usr/local/cuda-10.2/include/crt/device_functions.hpp
+/usr/local/cuda/include/crt/device_functions.hpp
 device_atomic_functions.h
-/usr/local/cuda-10.2/include/crt/device_atomic_functions.h
+/usr/local/cuda/include/crt/device_atomic_functions.h
 device_double_functions.h
-/usr/local/cuda-10.2/include/crt/device_double_functions.h
+/usr/local/cuda/include/crt/device_double_functions.h
 sm_20_atomic_functions.h
-/usr/local/cuda-10.2/include/crt/sm_20_atomic_functions.h
+/usr/local/cuda/include/crt/sm_20_atomic_functions.h
 sm_32_atomic_functions.h
-/usr/local/cuda-10.2/include/crt/sm_32_atomic_functions.h
+/usr/local/cuda/include/crt/sm_32_atomic_functions.h
 sm_35_atomic_functions.h
-/usr/local/cuda-10.2/include/crt/sm_35_atomic_functions.h
+/usr/local/cuda/include/crt/sm_35_atomic_functions.h
 sm_60_atomic_functions.h
-/usr/local/cuda-10.2/include/crt/sm_60_atomic_functions.h
+/usr/local/cuda/include/crt/sm_60_atomic_functions.h
 sm_20_intrinsics.h
-/usr/local/cuda-10.2/include/crt/sm_20_intrinsics.h
+/usr/local/cuda/include/crt/sm_20_intrinsics.h
 sm_30_intrinsics.h
-/usr/local/cuda-10.2/include/crt/sm_30_intrinsics.h
+/usr/local/cuda/include/crt/sm_30_intrinsics.h
 sm_32_intrinsics.h
-/usr/local/cuda-10.2/include/crt/sm_32_intrinsics.h
+/usr/local/cuda/include/crt/sm_32_intrinsics.h
 sm_35_intrinsics.h
-/usr/local/cuda-10.2/include/crt/sm_35_intrinsics.h
+/usr/local/cuda/include/crt/sm_35_intrinsics.h
 sm_61_intrinsics.h
-/usr/local/cuda-10.2/include/crt/sm_61_intrinsics.h
+/usr/local/cuda/include/crt/sm_61_intrinsics.h
 sm_70_rt.h
-/usr/local/cuda-10.2/include/crt/sm_70_rt.h
+/usr/local/cuda/include/crt/sm_70_rt.h
 surface_functions.h
-/usr/local/cuda-10.2/include/crt/surface_functions.h
+/usr/local/cuda/include/crt/surface_functions.h
 texture_fetch_functions.h
-/usr/local/cuda-10.2/include/crt/texture_fetch_functions.h
+/usr/local/cuda/include/crt/texture_fetch_functions.h
 texture_indirect_functions.h
-/usr/local/cuda-10.2/include/crt/texture_indirect_functions.h
+/usr/local/cuda/include/crt/texture_indirect_functions.h
 surface_indirect_functions.h
-/usr/local/cuda-10.2/include/crt/surface_indirect_functions.h
+/usr/local/cuda/include/crt/surface_indirect_functions.h
 
-/usr/local/cuda-10.2/include/crt/device_functions.hpp
+/usr/local/cuda/include/crt/device_functions.hpp
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/crt/func_macro.h
+/usr/local/cuda/include/crt/func_macro.h
 
-/usr/local/cuda-10.2/include/crt/host_config.h
+/usr/local/cuda/include/crt/host_config.h
 features.h
 -
 crtdefs.h
@@ -3456,15 +3456,15 @@ corecrt.h
 cstdarg
 -
 
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/crt/math_functions.h
+/usr/local/cuda/include/crt/math_functions.h
 __config
 -
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 math.h
 -
 stdlib.h
@@ -3476,277 +3476,277 @@ cstdlib
 crt/func_macro.h
 -
 math_functions.hpp
-/usr/local/cuda-10.2/include/crt/math_functions.hpp
+/usr/local/cuda/include/crt/math_functions.hpp
 
-/usr/local/cuda-10.2/include/crt/math_functions.hpp
+/usr/local/cuda/include/crt/math_functions.hpp
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 math_constants.h
-/usr/local/cuda-10.2/include/crt/math_constants.h
+/usr/local/cuda/include/crt/math_constants.h
 crt/func_macro.h
 -
 
-/usr/local/cuda-10.2/include/crt/sm_70_rt.h
+/usr/local/cuda/include/crt/sm_70_rt.h
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 sm_70_rt.hpp
-/usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+/usr/local/cuda/include/crt/sm_70_rt.hpp
 
-/usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+/usr/local/cuda/include/crt/sm_70_rt.hpp
 builtin_types.h
-/usr/local/cuda-10.2/include/crt/builtin_types.h
+/usr/local/cuda/include/crt/builtin_types.h
 device_types.h
-/usr/local/cuda-10.2/include/crt/device_types.h
+/usr/local/cuda/include/crt/device_types.h
 host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/cuda.h
+/usr/local/cuda/include/cuda.h
 stdlib.h
 -
 stdint.h
 -
 
-/usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+/usr/local/cuda/include/cuda_device_runtime_api.h
 driver_types.h
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/cuda_runtime.h
+/usr/local/cuda/include/cuda_runtime.h
 crt/host_config.h
-/usr/local/cuda-10.2/include/crt/host_config.h
+/usr/local/cuda/include/crt/host_config.h
 builtin_types.h
-/usr/local/cuda-10.2/include/builtin_types.h
+/usr/local/cuda/include/builtin_types.h
 library_types.h
-/usr/local/cuda-10.2/include/library_types.h
+/usr/local/cuda/include/library_types.h
 channel_descriptor.h
-/usr/local/cuda-10.2/include/channel_descriptor.h
+/usr/local/cuda/include/channel_descriptor.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 driver_functions.h
-/usr/local/cuda-10.2/include/driver_functions.h
+/usr/local/cuda/include/driver_functions.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 vector_functions.h
-/usr/local/cuda-10.2/include/vector_functions.h
+/usr/local/cuda/include/vector_functions.h
 nvrtc_device_runtime.h
-/usr/local/cuda-10.2/include/nvrtc_device_runtime.h
+/usr/local/cuda/include/nvrtc_device_runtime.h
 crt/device_functions.h
-/usr/local/cuda-10.2/include/crt/device_functions.h
+/usr/local/cuda/include/crt/device_functions.h
 crt/common_functions.h
-/usr/local/cuda-10.2/include/crt/common_functions.h
+/usr/local/cuda/include/crt/common_functions.h
 cuda_surface_types.h
-/usr/local/cuda-10.2/include/cuda_surface_types.h
+/usr/local/cuda/include/cuda_surface_types.h
 cuda_texture_types.h
-/usr/local/cuda-10.2/include/cuda_texture_types.h
+/usr/local/cuda/include/cuda_texture_types.h
 device_launch_parameters.h
-/usr/local/cuda-10.2/include/device_launch_parameters.h
+/usr/local/cuda/include/device_launch_parameters.h
 crt/common_functions.h
-/usr/local/cuda-10.2/include/crt/common_functions.h
+/usr/local/cuda/include/crt/common_functions.h
 cuda_surface_types.h
-/usr/local/cuda-10.2/include/cuda_surface_types.h
+/usr/local/cuda/include/cuda_surface_types.h
 cuda_texture_types.h
-/usr/local/cuda-10.2/include/cuda_texture_types.h
+/usr/local/cuda/include/cuda_texture_types.h
 crt/device_functions.h
-/usr/local/cuda-10.2/include/crt/device_functions.h
+/usr/local/cuda/include/crt/device_functions.h
 device_launch_parameters.h
-/usr/local/cuda-10.2/include/device_launch_parameters.h
+/usr/local/cuda/include/device_launch_parameters.h
 functional
 -
 utility
 -
 
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 builtin_types.h
-/usr/local/cuda-10.2/include/builtin_types.h
+/usr/local/cuda/include/builtin_types.h
 cuda_device_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+/usr/local/cuda/include/cuda_device_runtime_api.h
 
-/usr/local/cuda-10.2/include/cuda_surface_types.h
+/usr/local/cuda/include/cuda_surface_types.h
 channel_descriptor.h
-/usr/local/cuda-10.2/include/channel_descriptor.h
+/usr/local/cuda/include/channel_descriptor.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/cuda_texture_types.h
+/usr/local/cuda/include/cuda_texture_types.h
 channel_descriptor.h
-/usr/local/cuda-10.2/include/channel_descriptor.h
+/usr/local/cuda/include/channel_descriptor.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/device_atomic_functions.h
+/usr/local/cuda/include/device_atomic_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 device_atomic_functions.hpp
-/usr/local/cuda-10.2/include/device_atomic_functions.hpp
+/usr/local/cuda/include/device_atomic_functions.hpp
 
-/usr/local/cuda-10.2/include/device_atomic_functions.hpp
+/usr/local/cuda/include/device_atomic_functions.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/device_launch_parameters.h
+/usr/local/cuda/include/device_launch_parameters.h
 vector_types.h
-/usr/local/cuda-10.2/include/vector_types.h
+/usr/local/cuda/include/vector_types.h
 
-/usr/local/cuda-10.2/include/device_types.h
+/usr/local/cuda/include/device_types.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
-/usr/local/cuda-10.2/include/driver_functions.h
+/usr/local/cuda/include/driver_functions.h
 builtin_types.h
-/usr/local/cuda-10.2/include/builtin_types.h
+/usr/local/cuda/include/builtin_types.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 driver_types.h
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 vector_types.h
-/usr/local/cuda-10.2/include/vector_types.h
+/usr/local/cuda/include/vector_types.h
 limits.h
 -
 stddef.h
 -
 
-/usr/local/cuda-10.2/include/library_types.h
+/usr/local/cuda/include/library_types.h
 
-/usr/local/cuda-10.2/include/math_constants.h
+/usr/local/cuda/include/math_constants.h
 
-/usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+/usr/local/cuda/include/sm_20_atomic_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_20_atomic_functions.hpp
-/usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+/usr/local/cuda/include/sm_20_atomic_functions.hpp
 
-/usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+/usr/local/cuda/include/sm_20_atomic_functions.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_20_intrinsics.h
+/usr/local/cuda/include/sm_20_intrinsics.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_20_intrinsics.hpp
-/usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+/usr/local/cuda/include/sm_20_intrinsics.hpp
 
-/usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+/usr/local/cuda/include/sm_20_intrinsics.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_30_intrinsics.h
+/usr/local/cuda/include/sm_30_intrinsics.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_30_intrinsics.hpp
-/usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+/usr/local/cuda/include/sm_30_intrinsics.hpp
 
-/usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+/usr/local/cuda/include/sm_30_intrinsics.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+/usr/local/cuda/include/sm_32_atomic_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_32_atomic_functions.hpp
-/usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+/usr/local/cuda/include/sm_32_atomic_functions.hpp
 
-/usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+/usr/local/cuda/include/sm_32_atomic_functions.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_32_intrinsics.h
+/usr/local/cuda/include/sm_32_intrinsics.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_32_intrinsics.hpp
-/usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+/usr/local/cuda/include/sm_32_intrinsics.hpp
 
-/usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+/usr/local/cuda/include/sm_32_intrinsics.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+/usr/local/cuda/include/sm_35_atomic_functions.h
 sm_32_atomic_functions.h
-/usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+/usr/local/cuda/include/sm_32_atomic_functions.h
 
-/usr/local/cuda-10.2/include/sm_35_intrinsics.h
+/usr/local/cuda/include/sm_35_intrinsics.h
 sm_32_intrinsics.h
-/usr/local/cuda-10.2/include/sm_32_intrinsics.h
+/usr/local/cuda/include/sm_32_intrinsics.h
 
-/usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+/usr/local/cuda/include/sm_60_atomic_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_60_atomic_functions.hpp
-/usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+/usr/local/cuda/include/sm_60_atomic_functions.hpp
 
-/usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+/usr/local/cuda/include/sm_60_atomic_functions.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/sm_61_intrinsics.h
+/usr/local/cuda/include/sm_61_intrinsics.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 sm_61_intrinsics.hpp
-/usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+/usr/local/cuda/include/sm_61_intrinsics.hpp
 
-/usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+/usr/local/cuda/include/sm_61_intrinsics.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/surface_functions.h
+/usr/local/cuda/include/surface_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 cuda_surface_types.h
-/usr/local/cuda-10.2/include/cuda_surface_types.h
+/usr/local/cuda/include/cuda_surface_types.h
 
-/usr/local/cuda-10.2/include/surface_indirect_functions.h
+/usr/local/cuda/include/surface_indirect_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/surface_types.h
+/usr/local/cuda/include/surface_types.h
 driver_types.h
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 
-/usr/local/cuda-10.2/include/texture_fetch_functions.h
+/usr/local/cuda/include/texture_fetch_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 cuda_texture_types.h
-/usr/local/cuda-10.2/include/cuda_texture_types.h
+/usr/local/cuda/include/cuda_texture_types.h
 
-/usr/local/cuda-10.2/include/texture_indirect_functions.h
+/usr/local/cuda/include/texture_indirect_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/texture_types.h
+/usr/local/cuda/include/texture_types.h
 driver_types.h
-/usr/local/cuda-10.2/include/driver_types.h
+/usr/local/cuda/include/driver_types.h
 
-/usr/local/cuda-10.2/include/vector_functions.h
+/usr/local/cuda/include/vector_functions.h
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 vector_functions.hpp
-/usr/local/cuda-10.2/include/vector_functions.hpp
+/usr/local/cuda/include/vector_functions.hpp
 
-/usr/local/cuda-10.2/include/vector_functions.hpp
+/usr/local/cuda/include/vector_functions.hpp
 cuda_runtime_api.h
-/usr/local/cuda-10.2/include/cuda_runtime_api.h
+/usr/local/cuda/include/cuda_runtime_api.h
 
-/usr/local/cuda-10.2/include/vector_types.h
+/usr/local/cuda/include/vector_types.h
 crt/host_defines.h
-/usr/local/cuda-10.2/include/crt/host_defines.h
+/usr/local/cuda/include/crt/host_defines.h
 
 /usr/local/zed/include/sl/Camera.hpp
 algorithm

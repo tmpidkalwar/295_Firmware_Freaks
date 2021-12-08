@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src
+# Install script for directory: /home/freaks/catkin_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,106 +49,118 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/_setup_util.py")
+   "/home/freaks/catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE PROGRAM FILES "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE PROGRAM FILES "/home/freaks/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/env.sh")
+   "/home/freaks/catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE PROGRAM FILES "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE PROGRAM FILES "/home/freaks/catkin_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/setup.bash;/home/jetson-tx2/catkin_ws/install/local_setup.bash")
+   "/home/freaks/catkin_ws/install/setup.bash;/home/freaks/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE FILE FILES
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/setup.sh;/home/jetson-tx2/catkin_ws/install/local_setup.sh")
+   "/home/freaks/catkin_ws/install/setup.sh;/home/freaks/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE FILE FILES
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/setup.zsh;/home/jetson-tx2/catkin_ws/install/local_setup.zsh")
+   "/home/freaks/catkin_ws/install/setup.zsh;/home/freaks/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE FILE FILES
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/freaks/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jetson-tx2/catkin_ws/install/.rosinstall")
+   "/home/freaks/catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jetson-tx2/catkin_ws/install" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/freaks/catkin_ws/install" TYPE FILE FILES "/home/freaks/catkin_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jetson-tx2/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_ar_track_alvar_example/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_depth_sub_tutorial/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/zed_display_rviz/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/zed_examples/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-wrapper/zed-ros-interfaces/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_multicamera_example/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_nodelet_example/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-wrapper/zed_nodelets/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-wrapper/zed_ros/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_sensors_sub_tutorial/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_video_sub_tutorial/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/zed-ros-wrapper/zed_wrapper/cmake_install.cmake")
-  include("/home/jetson-tx2/catkin_ws/build/navigation/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/image_transport_plugins/image_transport_plugins/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/navig/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/vision_opencv/opencv_tests/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/rtab_node/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/vision_opencv/vision_opencv/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/nav_pkg/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/serial_interface/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/vision_opencv/cv_bridge/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/vision_opencv/image_geometry/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/image_transport_plugins/compressed_depth_image_transport/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/image_transport_plugins/compressed_image_transport/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/image_transport_plugins/theora_image_transport/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/rtabmap_ros/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_ar_track_alvar_example/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_depth_sub_tutorial/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/zed_display_rviz/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/zed_examples/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-interfaces/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_multicamera_example/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_nodelet_example/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-wrapper/zed_nodelets/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-wrapper/zed_ros/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_sensors_sub_tutorial/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_tracking_sub_tutorial/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_video_sub_tutorial/cmake_install.cmake")
+  include("/home/freaks/catkin_ws/build/zed-ros-wrapper/zed_wrapper/cmake_install.cmake")
 
 endif()
 
@@ -160,5 +172,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jetson-tx2/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/freaks/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,15 +1,28 @@
 # CMake generated Testfile for 
-# Source directory: /home/jetson-tx2/catkin_ws/src
-# Build directory: /home/jetson-tx2/catkin_ws/build
+# Source directory: /home/freaks/catkin_ws/src
+# Build directory: /home/freaks/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("image_transport_plugins/image_transport_plugins")
+subdirs("navig")
+subdirs("vision_opencv/opencv_tests")
+subdirs("rtab_node")
+subdirs("vision_opencv/vision_opencv")
+subdirs("nav_pkg")
+subdirs("serial_interface")
+subdirs("vision_opencv/cv_bridge")
+subdirs("vision_opencv/image_geometry")
+subdirs("image_transport_plugins/compressed_depth_image_transport")
+subdirs("image_transport_plugins/compressed_image_transport")
+subdirs("image_transport_plugins/theora_image_transport")
+subdirs("rtabmap_ros")
 subdirs("zed-ros-examples/examples/zed_ar_track_alvar_example")
 subdirs("zed-ros-examples/tutorials/zed_depth_sub_tutorial")
 subdirs("zed-ros-examples/zed_display_rviz")
 subdirs("zed-ros-examples/zed_examples")
-subdirs("zed-ros-wrapper/zed-ros-interfaces")
+subdirs("zed-ros-interfaces")
 subdirs("zed-ros-examples/rviz-plugin-zed-od")
 subdirs("zed-ros-examples/examples/zed_multicamera_example")
 subdirs("zed-ros-examples/examples/zed_nodelet_example")
@@ -22,4 +35,3 @@ subdirs("zed-ros-examples/tests/zed_sync_test")
 subdirs("zed-ros-examples/tutorials/zed_tracking_sub_tutorial")
 subdirs("zed-ros-examples/tutorials/zed_video_sub_tutorial")
 subdirs("zed-ros-wrapper/zed_wrapper")
-subdirs("navigation")

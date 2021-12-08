@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "zed_display_rviz"
-PROJECT_SPACE_DIR = "/home/jetson-tx2/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/freaks/catkin_ws/devel"
 PROJECT_VERSION = "3.0.0"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_sensors_sub_tutorial/src/zed_sensors_sub_tutorial.cpp
+/home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_sensors_sub_tutorial/src/zed_sensors_sub_tutorial.cpp
 ros/ros.h
 -
 sensor_msgs/FluidPressure.h

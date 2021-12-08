@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.cpp
+/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.cpp
 rgbd_test_sync.hpp
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.hpp
+/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.hpp
 ros/console.h
 -
 chrono
@@ -26,7 +26,7 @@ fstream
 sensor_msgs/image_encodings.h
 -
 
-/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.hpp
+/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.hpp
 ros/ros.h
 -
 nodelet/nodelet.h

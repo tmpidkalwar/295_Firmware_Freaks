@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZEDNodelets.dir/src/zed_nodelet/src/zed_wrapper_nodelet.cpp.o"
   "CMakeFiles/ZEDNodelets.dir/src/rgbd_sensors_sync_nodelet/src/rgbd_sensor_sync.cpp.o"
   "CMakeFiles/ZEDNodelets.dir/src/rgbd_sensors_demux_nodelet/src/rgbd_sensor_demux.cpp.o"
-  "/home/jetson-tx2/catkin_ws/devel/lib/libZEDNodelets.pdb"
-  "/home/jetson-tx2/catkin_ws/devel/lib/libZEDNodelets.so"
+  "/home/freaks/catkin_ws/devel/lib/libZEDNodelets.pdb"
+  "/home/freaks/catkin_ws/devel/lib/libZEDNodelets.so"
 )
 
 # Per-language clean rules from dependency scanning.

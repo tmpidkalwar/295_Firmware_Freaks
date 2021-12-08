@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/jetson-tx2/catkin_ws/devel/setup.sh
+    local-name: /home/freaks/catkin_ws/devel/setup.sh

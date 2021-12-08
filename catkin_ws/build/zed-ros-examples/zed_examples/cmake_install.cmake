@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/zed_examples
+# Install script for directory: /home/freaks/catkin_ws/src/zed-ros-examples/zed_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_examples" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/zed_examples/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_examples" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/zed_examples/package.xml")
 endif()
 

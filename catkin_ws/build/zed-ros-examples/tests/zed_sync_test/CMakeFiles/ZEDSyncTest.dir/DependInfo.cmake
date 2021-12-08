@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.cpp" "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/CMakeFiles/ZEDSyncTest.dir/src/rgbd_test_sync.cpp.o"
+  "/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src/rgbd_test_sync.cpp" "/home/freaks/catkin_ws/build/zed-ros-examples/tests/zed_sync_test/CMakeFiles/ZEDSyncTest.dir/src/rgbd_test_sync.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"
-  "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src"
+  "/home/freaks/catkin_ws/src/zed-ros-examples/tests/zed_sync_test/src"
   )
 
 # Targets to which this target links.

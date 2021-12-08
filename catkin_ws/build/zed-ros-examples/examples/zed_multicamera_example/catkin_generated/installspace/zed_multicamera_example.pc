@@ -1,4 +1,4 @@
-prefix=/home/jetson-tx2/catkin_ws/install
+prefix=/home/freaks/catkin_ws/install
 
 Name: zed_multicamera_example
 Description: Description of zed_multicamera_example

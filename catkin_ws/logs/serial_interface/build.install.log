@@ -1,0 +1,15 @@
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/freaks/catkin_ws/install/_setup_util.py
+-- Installing: /home/freaks/catkin_ws/install/env.sh
+-- Installing: /home/freaks/catkin_ws/install/setup.bash
+-- Installing: /home/freaks/catkin_ws/install/local_setup.bash
+-- Installing: /home/freaks/catkin_ws/install/setup.sh
+-- Installing: /home/freaks/catkin_ws/install/local_setup.sh
+-- Installing: /home/freaks/catkin_ws/install/setup.zsh
+-- Installing: /home/freaks/catkin_ws/install/local_setup.zsh
+-- Installing: /home/freaks/catkin_ws/install/.rosinstall
+-- Installing: /home/freaks/catkin_ws/install/lib/pkgconfig/serial_interface.pc
+-- Installing: /home/freaks/catkin_ws/install/share/serial_interface/cmake/serial_interfaceConfig.cmake
+-- Installing: /home/freaks/catkin_ws/install/share/serial_interface/cmake/serial_interfaceConfig-version.cmake
+-- Installing: /home/freaks/catkin_ws/install/share/serial_interface/package.xml

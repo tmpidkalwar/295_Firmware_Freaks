@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o"
   "CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o"
   "CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o"
-  "/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.pdb"
-  "/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so"
+  "/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.pdb"
+  "/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so"
 )
 
 # Per-language clean rules from dependency scanning.

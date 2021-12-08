@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zed_wrapper_node.dir/src/zed_wrapper_node.cpp.o"
-  "/home/jetson-tx2/catkin_ws/devel/lib/zed_wrapper/zed_wrapper_node.pdb"
-  "/home/jetson-tx2/catkin_ws/devel/lib/zed_wrapper/zed_wrapper_node"
+  "/home/freaks/catkin_ws/devel/lib/zed_wrapper/zed_wrapper_node.pdb"
+  "/home/freaks/catkin_ws/devel/lib/zed_wrapper/zed_wrapper_node"
 )
 
 # Per-language clean rules from dependency scanning.

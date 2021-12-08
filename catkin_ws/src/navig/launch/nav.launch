@@ -1,0 +1,21 @@
+<launch>
+
+    <remap from="/map" to="/rtabmap/grid_map" />
+
+    <!-- Launch the move_base node with the specified config files -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+        <param name="base_global_planner" value="global_planner/GlobalPlanner" />
+
+        <rosparam file="$(find navig)/params/costmap_common_params.yaml"       command="load" ns="global_costmap" />
+        <rosparam file="$(find navig)/params/costmap_common_params.yaml"       command="load" ns="local_costmap" />
+        <rosparam file="$(find navig)/params/costmap_local_params.yaml"        command="load" />
+        <rosparam file="$(find navig)/params/costmap_global_params.yaml"       command="load" />
+        <rosparam file="$(find navig)/params/base_local_planner_params.yaml"   command="load" />
+        <rosparam file="$(find navig)/params/global_planner_params.yaml"       command="load" />
+	<remap from="odom" to="/zed/zed_node/odom" />
+    </node>
+    <node pkg="navig" name="navig" type="navig_node.py" output="screen">
+    </node>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/freaks/Desktop/freaks_rviz.rviz" output="screen" />	
+</launch>

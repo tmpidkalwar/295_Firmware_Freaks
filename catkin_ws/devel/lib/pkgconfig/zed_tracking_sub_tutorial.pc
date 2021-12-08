@@ -1,4 +1,4 @@
-prefix=/home/jetson-tx2/catkin_ws/devel
+prefix=/home/freaks/catkin_ws/devel
 
 Name: zed_tracking_sub_tutorial
 Description: Description of zed_tracking_sub_tutorial

@@ -67,14 +67,14 @@ set(zed_nodelet_example_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(zed_nodelet_example_SOURCE_PREFIX /home/jetson-tx2/catkin_ws/src/zed-ros-examples/examples/zed_nodelet_example)
-  set(zed_nodelet_example_DEVEL_PREFIX /home/jetson-tx2/catkin_ws/devel)
+  set(zed_nodelet_example_SOURCE_PREFIX /home/freaks/catkin_ws/src/zed-ros-examples/examples/zed_nodelet_example)
+  set(zed_nodelet_example_DEVEL_PREFIX /home/freaks/catkin_ws/devel)
   set(zed_nodelet_example_INSTALL_PREFIX "")
   set(zed_nodelet_example_PREFIX ${zed_nodelet_example_DEVEL_PREFIX})
 else()
   set(zed_nodelet_example_SOURCE_PREFIX "")
   set(zed_nodelet_example_DEVEL_PREFIX "")
-  set(zed_nodelet_example_INSTALL_PREFIX /home/jetson-tx2/catkin_ws/install)
+  set(zed_nodelet_example_INSTALL_PREFIX /home/freaks/catkin_ws/install)
   set(zed_nodelet_example_PREFIX ${zed_nodelet_example_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jetson-tx2/catkin_ws/install/lib;/home/jetson-tx2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/freaks/catkin_ws/install/lib;/home/freaks/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

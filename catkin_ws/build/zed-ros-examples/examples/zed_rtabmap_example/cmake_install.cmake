@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example
+# Install script for directory: /home/freaks/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_example.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_example.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_rtabmap_example/cmake" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_exampleConfig.cmake"
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_exampleConfig-version.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_exampleConfig.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/examples/zed_rtabmap_example/catkin_generated/installspace/zed_rtabmap_exampleConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_rtabmap_example" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_rtabmap_example" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_rtabmap_example" TYPE DIRECTORY FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_rtabmap_example" TYPE DIRECTORY FILES "/home/freaks/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example/launch")
 endif()
 

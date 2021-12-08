@@ -1,0 +1,182 @@
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_reset_tracking
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_start_object_detection
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_save_area_memory
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_save_3d_map
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_reset_tracking
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_save_3d_map
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_save_area_memory
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_start_object_detection
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_stop_3d_mapping
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_start_3d_mapping
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_stop_remote_stream
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_stop_svo_recording
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_start_3d_mapping
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_stop_3d_mapping
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_stop_remote_stream
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_stop_svo_recording
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Keypoint2Df
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_BoundingBox2Df
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_BoundingBox3D
+Scanning dependencies of target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Keypoint3D
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Keypoint2Df
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_BoundingBox2Df
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_BoundingBox3D
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Skeleton3D
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_start_svo_recording
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Keypoint3D
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_toggle_led
+[  0%] Built target std_msgs_generate_messages_cpp
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_set_led_status
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Skeleton3D
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_start_svo_recording
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_BoundingBox2Di
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Object
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_toggle_led
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_set_led_status
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Keypoint2Di
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_Skeleton2D
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_BoundingBox2Di
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Object
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_stop_object_detection
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_RGBDSensors
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Keypoint2Di
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_ObjectsStamped
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_Skeleton2D
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_set_pose
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_stop_object_detection
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_RGBDSensors
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_reset_odometry
+Scanning dependencies of target _zed_interfaces_generate_messages_check_deps_start_remote_stream
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_ObjectsStamped
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_set_pose
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_eus
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_reset_odometry
+[  0%] Built target _zed_interfaces_generate_messages_check_deps_start_remote_stream
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target sensor_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_py
+Scanning dependencies of target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+Scanning dependencies of target zed_interfaces_generate_messages_cpp
+Scanning dependencies of target zed_interfaces_generate_messages_nodejs
+Scanning dependencies of target zed_interfaces_generate_messages_lisp
+Scanning dependencies of target zed_interfaces_generate_messages_eus
+[  1%] Generating Javascript code from zed_interfaces/BoundingBox2Df.msg
+[  2%] Generating C++ code from zed_interfaces/BoundingBox2Df.msg
+[  3%] Generating Lisp code from zed_interfaces/BoundingBox2Df.msg
+[  4%] Generating EusLisp code from zed_interfaces/BoundingBox2Df.msg
+[  4%] Generating Javascript code from zed_interfaces/BoundingBox2Di.msg
+[  4%] Generating Lisp code from zed_interfaces/BoundingBox2Di.msg
+[  5%] Generating Javascript code from zed_interfaces/BoundingBox3D.msg
+[  6%] Generating Lisp code from zed_interfaces/BoundingBox3D.msg
+[  7%] Generating EusLisp code from zed_interfaces/BoundingBox2Di.msg
+[  7%] Generating EusLisp code from zed_interfaces/BoundingBox3D.msg
+[  8%] Generating EusLisp code from zed_interfaces/Keypoint2Df.msg
+[  9%] Generating EusLisp code from zed_interfaces/Keypoint2Di.msg
+[  9%] Generating EusLisp code from zed_interfaces/Keypoint3D.msg
+[ 10%] Generating EusLisp code from zed_interfaces/Object.msg
+[ 11%] Generating EusLisp code from zed_interfaces/ObjectsStamped.msg
+[ 11%] Generating EusLisp code from zed_interfaces/Skeleton2D.msg
+[ 12%] Generating EusLisp code from zed_interfaces/Skeleton3D.msg
+[ 13%] Generating EusLisp code from zed_interfaces/RGBDSensors.msg
+[ 15%] Generating EusLisp code from zed_interfaces/set_pose.srv
+[ 15%] Generating EusLisp code from zed_interfaces/reset_odometry.srv
+[ 16%] Generating EusLisp code from zed_interfaces/reset_tracking.srv
+[ 17%] Generating EusLisp code from zed_interfaces/start_svo_recording.srv
+[ 17%] Generating EusLisp code from zed_interfaces/stop_svo_recording.srv
+[ 18%] Generating EusLisp code from zed_interfaces/start_remote_stream.srv
+[ 19%] Generating EusLisp code from zed_interfaces/stop_remote_stream.srv
+[ 19%] Generating EusLisp code from zed_interfaces/set_led_status.srv
+[ 20%] Generating EusLisp code from zed_interfaces/toggle_led.srv
+[ 21%] Generating EusLisp code from zed_interfaces/start_3d_mapping.srv
+Traceback (most recent call last):
+  File "/opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py", line 43, in <module>
+    import genmsg.template_tools
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/genmsg/template_tools.py", line 39, in <module>
+    import em
+ModuleNotFoundError: No module named 'em'
+CMakeFiles/zed_interfaces_generate_messages_cpp.dir/build.make:88: recipe for target '/home/freaks/catkin_ws/devel/.private/zed_interfaces/include/zed_interfaces/BoundingBox2Df.h' failed
+make[2]: *** [/home/freaks/catkin_ws/devel/.private/zed_interfaces/include/zed_interfaces/BoundingBox2Df.h] Error 1
+CMakeFiles/Makefile2:1263: recipe for target 'CMakeFiles/zed_interfaces_generate_messages_cpp.dir/all' failed
+make[1]: *** [CMakeFiles/zed_interfaces_generate_messages_cpp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 21%] Generating EusLisp code from zed_interfaces/stop_3d_mapping.srv
+[ 22%] Generating Lisp code from zed_interfaces/Keypoint2Df.msg
+[ 23%] Generating EusLisp code from zed_interfaces/save_3d_map.srv
+[ 24%] Generating EusLisp code from zed_interfaces/start_object_detection.srv
+[ 25%] Generating EusLisp code from zed_interfaces/stop_object_detection.srv
+[ 25%] Generating EusLisp code from zed_interfaces/save_area_memory.srv
+[ 26%] Generating EusLisp manifest code for zed_interfaces
+[ 26%] Built target zed_interfaces_generate_messages_eus
+[ 26%] Generating Lisp code from zed_interfaces/Keypoint2Di.msg
+[ 27%] Generating Javascript code from zed_interfaces/Keypoint2Df.msg
+[ 29%] Generating Lisp code from zed_interfaces/Keypoint3D.msg
+[ 29%] Generating Javascript code from zed_interfaces/Keypoint2Di.msg
+[ 30%] Generating Javascript code from zed_interfaces/Keypoint3D.msg
+[ 31%] Generating Lisp code from zed_interfaces/Object.msg
+[ 32%] Generating Javascript code from zed_interfaces/Object.msg
+[ 33%] Generating Javascript code from zed_interfaces/ObjectsStamped.msg
+[ 34%] Generating Lisp code from zed_interfaces/ObjectsStamped.msg
+[ 35%] Generating Lisp code from zed_interfaces/Skeleton3D.msg
+[ 35%] Generating Lisp code from zed_interfaces/Skeleton2D.msg
+[ 35%] Generating Javascript code from zed_interfaces/Skeleton2D.msg
+[ 36%] Generating Javascript code from zed_interfaces/Skeleton3D.msg
+[ 37%] Generating Lisp code from zed_interfaces/RGBDSensors.msg
+[ 36%] Generating Lisp code from zed_interfaces/set_pose.srv
+[ 38%] Generating Lisp code from zed_interfaces/reset_odometry.srv
+[ 39%] Generating Javascript code from zed_interfaces/RGBDSensors.msg
+[ 40%] Generating Lisp code from zed_interfaces/stop_svo_recording.srv
+[ 40%] Generating Javascript code from zed_interfaces/set_pose.srv
+[ 41%] Generating Lisp code from zed_interfaces/reset_tracking.srv
+[ 41%] Generating Lisp code from zed_interfaces/start_svo_recording.srv
+[ 43%] Generating Lisp code from zed_interfaces/start_remote_stream.srv
+[ 44%] Generating Javascript code from zed_interfaces/reset_odometry.srv
+[ 45%] Generating Javascript code from zed_interfaces/reset_tracking.srv
+[ 45%] Generating Javascript code from zed_interfaces/start_svo_recording.srv
+[ 45%] Generating Lisp code from zed_interfaces/stop_remote_stream.srv
+[ 46%] Generating Javascript code from zed_interfaces/stop_svo_recording.srv
+[ 47%] Generating Lisp code from zed_interfaces/set_led_status.srv
+[ 48%] Generating Lisp code from zed_interfaces/toggle_led.srv
+[ 50%] Generating Javascript code from zed_interfaces/start_remote_stream.srv
+[ 50%] Generating Javascript code from zed_interfaces/stop_remote_stream.srv
+[ 51%] Generating Lisp code from zed_interfaces/start_3d_mapping.srv
+[ 51%] Generating Javascript code from zed_interfaces/set_led_status.srv
+[ 52%] Generating Javascript code from zed_interfaces/toggle_led.srv
+[ 53%] Generating Javascript code from zed_interfaces/stop_3d_mapping.srv
+[ 53%] Generating Javascript code from zed_interfaces/start_3d_mapping.srv
+[ 53%] Generating Lisp code from zed_interfaces/stop_3d_mapping.srv
+[ 54%] Generating Javascript code from zed_interfaces/save_3d_map.srv
+[ 55%] Generating Javascript code from zed_interfaces/start_object_detection.srv
+[ 55%] Generating Javascript code from zed_interfaces/stop_object_detection.srv
+[ 56%] Generating Javascript code from zed_interfaces/save_area_memory.srv
+[ 58%] Generating Lisp code from zed_interfaces/save_3d_map.srv
+[ 59%] Generating Lisp code from zed_interfaces/start_object_detection.srv
+[ 59%] Generating Lisp code from zed_interfaces/stop_object_detection.srv
+[ 60%] Generating Lisp code from zed_interfaces/save_area_memory.srv
+[ 60%] Built target zed_interfaces_generate_messages_nodejs
+[ 60%] Built target zed_interfaces_generate_messages_lisp
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

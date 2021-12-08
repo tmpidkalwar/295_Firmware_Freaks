@@ -1,0 +1,5 @@
+navig
+/home/freaks/catkin_ws/devel/.private/navig/cmake.lock /home/freaks/catkin_ws/devel/./cmake.lock
+/home/freaks/catkin_ws/devel/.private/navig/share/navig/cmake/navigConfig.cmake /home/freaks/catkin_ws/devel/share/navig/cmake/navigConfig.cmake
+/home/freaks/catkin_ws/devel/.private/navig/share/navig/cmake/navigConfig-version.cmake /home/freaks/catkin_ws/devel/share/navig/cmake/navigConfig-version.cmake
+/home/freaks/catkin_ws/devel/.private/navig/lib/pkgconfig/navig.pc /home/freaks/catkin_ws/devel/lib/pkgconfig/navig.pc

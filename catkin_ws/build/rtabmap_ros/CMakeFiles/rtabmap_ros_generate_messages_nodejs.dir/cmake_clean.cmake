@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/rtabmap_ros_generate_messages_nodejs"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/UserData.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Goal.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/GlobalDescriptor.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/EnvSensor.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/NodeData.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/RGBDImage.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/RGBDImages.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/KeyPoint.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/ScanDescriptor.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Path.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/GPS.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/MapGraph.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Point2f.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Point3f.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Info.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/OdomInfo.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/MapData.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/msg/Link.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GetMap.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/CleanupLocalGrids.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/SetGoal.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/AddLink.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/SetLabel.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GetNodesInRadius.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/LoadDatabase.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GetPlan.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GetNodeData.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/ListLabels.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GetMap2.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/GlobalBundleAdjustment.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/PublishMap.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/DetectMoreLoopClosures.js"
+  "/home/freaks/catkin_ws/devel/share/gennodejs/ros/rtabmap_ros/srv/ResetPose.js"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial
+# Install script for directory: /home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson-tx2/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/freaks/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorial.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorial.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_obj_det_sub_tutorial/cmake" TYPE FILE FILES
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorialConfig.cmake"
-    "/home/jetson-tx2/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorialConfig-version.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorialConfig.cmake"
+    "/home/freaks/catkin_ws/build/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/catkin_generated/installspace/zed_obj_det_sub_tutorialConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_obj_det_sub_tutorial" TYPE FILE FILES "/home/jetson-tx2/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_obj_det_sub_tutorial" TYPE FILE FILES "/home/freaks/catkin_ws/src/zed-ros-examples/tutorials/zed_obj_det_sub_tutorial/package.xml")
 endif()
 

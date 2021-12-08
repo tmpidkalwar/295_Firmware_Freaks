@@ -1,0 +1,5 @@
+rtab_node
+/home/freaks/catkin_ws/devel/.private/rtab_node/cmake.lock /home/freaks/catkin_ws/devel/./cmake.lock
+/home/freaks/catkin_ws/devel/.private/rtab_node/share/rtab_node/cmake/rtab_nodeConfig.cmake /home/freaks/catkin_ws/devel/share/rtab_node/cmake/rtab_nodeConfig.cmake
+/home/freaks/catkin_ws/devel/.private/rtab_node/share/rtab_node/cmake/rtab_nodeConfig-version.cmake /home/freaks/catkin_ws/devel/share/rtab_node/cmake/rtab_nodeConfig-version.cmake
+/home/freaks/catkin_ws/devel/.private/rtab_node/lib/pkgconfig/rtab_node.pc /home/freaks/catkin_ws/devel/lib/pkgconfig/rtab_node.pc

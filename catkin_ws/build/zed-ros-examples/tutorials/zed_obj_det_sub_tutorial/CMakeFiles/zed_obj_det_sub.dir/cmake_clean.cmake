@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zed_obj_det_sub.dir/src/zed_obj_det_sub_tutorial.cpp.o"
-  "/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub.pdb"
-  "/home/jetson-tx2/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub"
+  "/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub.pdb"
+  "/home/freaks/catkin_ws/devel/lib/zed_obj_det_sub_tutorial/zed_obj_det_sub"
 )
 
 # Per-language clean rules from dependency scanning.

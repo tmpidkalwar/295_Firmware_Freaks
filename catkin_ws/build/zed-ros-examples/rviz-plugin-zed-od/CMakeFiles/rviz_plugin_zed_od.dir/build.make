@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson-tx2/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/freaks/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson-tx2/catkin_ws/build
+CMAKE_BINARY_DIR = /home/freaks/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/depend.make
@@ -58,17 +58,17 @@ include zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/pr
 include zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/flags.make
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/flags.make
-zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o -c /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp
+zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o: /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o -c /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.i"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp > CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.i
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp > CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.i
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.s"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.s
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_display.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.s
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o.requires:
 
@@ -82,17 +82,17 @@ zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin
 
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/flags.make
-zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o: /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o -c /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp
+zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o: /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o -c /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.i"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp > CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.i
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp > CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.i
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.s"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.s
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od/src/plugin/src/zed_od_info.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.s
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o.requires:
 
@@ -107,16 +107,16 @@ zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/flags.make
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o: zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o -c /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o -c /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.i"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp > CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.i
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp > CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.i
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.s"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.s
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/rviz_plugin_zed_od_autogen/mocs_compilation.cpp -o CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.s
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o.requires:
 
@@ -138,66 +138,66 @@ rviz_plugin_zed_od_OBJECTS = \
 # External object files for target rviz_plugin_zed_od
 rviz_plugin_zed_od_EXTERNAL_OBJECTS =
 
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/build.make
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.9.5
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librviz.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libOgreOverlay.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libOgreMain.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libGL.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libGLU.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libinteractive_markers.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/liblaser_geometry.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libresource_retriever.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf2_ros.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libactionlib.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf2.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/liburdf.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_sensor.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_model_state.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_model.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_world.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libtinyxml.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/libPocoFoundation.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libdl.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroslib.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librospack.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libpython2.7.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_program_options.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroscpp.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librostime.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.9.5
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.9.5
-/home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jetson-tx2/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so"
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rviz_plugin_zed_od.dir/link.txt --verbose=$(VERBOSE)
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/build.make
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.9.5
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librviz.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libOgreOverlay.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libOgreMain.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libGL.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libGLU.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libinteractive_markers.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/liblaser_geometry.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libresource_retriever.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf2_ros.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libactionlib.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libtf2.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/liburdf.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_sensor.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_model_state.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_model.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liburdfdom_world.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libtinyxml.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/libPocoFoundation.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libdl.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroslib.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librospack.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libpython2.7.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_program_options.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroscpp.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/librostime.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.9.5
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.9.5
+/home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/freaks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so"
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rviz_plugin_zed_od.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/build: /home/jetson-tx2/catkin_ws/devel/lib/librviz_plugin_zed_od.so
+zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/build: /home/freaks/catkin_ws/devel/lib/librviz_plugin_zed_od.so
 
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/build
 
@@ -208,10 +208,10 @@ zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/requires: 
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/requires
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/clean:
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -P CMakeFiles/rviz_plugin_zed_od.dir/cmake_clean.cmake
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od && $(CMAKE_COMMAND) -P CMakeFiles/rviz_plugin_zed_od.dir/cmake_clean.cmake
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/clean
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/depend:
-	cd /home/jetson-tx2/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson-tx2/catkin_ws/src /home/jetson-tx2/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od /home/jetson-tx2/catkin_ws/build /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od /home/jetson-tx2/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/freaks/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/freaks/catkin_ws/src /home/freaks/catkin_ws/src/zed-ros-examples/rviz-plugin-zed-od /home/freaks/catkin_ws/build /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od /home/freaks/catkin_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od.dir/depend
 

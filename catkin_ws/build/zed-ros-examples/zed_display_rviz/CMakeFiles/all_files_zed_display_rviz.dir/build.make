@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson-tx2/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/freaks/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson-tx2/catkin_ws/build
+CMAKE_BINARY_DIR = /home/freaks/catkin_ws/build
 
 # Utility rule file for all_files_zed_display_rviz.
 
@@ -63,10 +63,10 @@ zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/buil
 .PHONY : zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/build
 
 zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/clean:
-	cd /home/jetson-tx2/catkin_ws/build/zed-ros-examples/zed_display_rviz && $(CMAKE_COMMAND) -P CMakeFiles/all_files_zed_display_rviz.dir/cmake_clean.cmake
+	cd /home/freaks/catkin_ws/build/zed-ros-examples/zed_display_rviz && $(CMAKE_COMMAND) -P CMakeFiles/all_files_zed_display_rviz.dir/cmake_clean.cmake
 .PHONY : zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/clean
 
 zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/depend:
-	cd /home/jetson-tx2/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson-tx2/catkin_ws/src /home/jetson-tx2/catkin_ws/src/zed-ros-examples/zed_display_rviz /home/jetson-tx2/catkin_ws/build /home/jetson-tx2/catkin_ws/build/zed-ros-examples/zed_display_rviz /home/jetson-tx2/catkin_ws/build/zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/freaks/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/freaks/catkin_ws/src /home/freaks/catkin_ws/src/zed-ros-examples/zed_display_rviz /home/freaks/catkin_ws/build /home/freaks/catkin_ws/build/zed-ros-examples/zed_display_rviz /home/freaks/catkin_ws/build/zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zed-ros-examples/zed_display_rviz/CMakeFiles/all_files_zed_display_rviz.dir/depend
 

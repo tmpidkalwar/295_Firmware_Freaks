@@ -1,4 +1,4 @@
-prefix=/home/jetson-tx2/catkin_ws/devel
+prefix=/home/freaks/catkin_ws/devel
 
 Name: rviz_plugin_zed_od
 Description: Description of rviz_plugin_zed_od

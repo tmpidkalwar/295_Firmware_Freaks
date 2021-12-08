@@ -1,0 +1,7 @@
+vision_opencv/image_geometry
+/home/freaks/catkin_ws/devel/.private/image_geometry/cmake.lock /home/freaks/catkin_ws/devel/./cmake.lock
+/home/freaks/catkin_ws/devel/.private/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake /home/freaks/catkin_ws/devel/share/image_geometry/cmake/image_geometryConfig-version.cmake
+/home/freaks/catkin_ws/devel/.private/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake /home/freaks/catkin_ws/devel/share/image_geometry/cmake/image_geometryConfig.cmake
+/home/freaks/catkin_ws/devel/.private/image_geometry/lib/libimage_geometry.so /home/freaks/catkin_ws/devel/lib/libimage_geometry.so
+/home/freaks/catkin_ws/devel/.private/image_geometry/lib/python3/dist-packages/image_geometry/__init__.py /home/freaks/catkin_ws/devel/lib/python3/dist-packages/image_geometry/__init__.py
+/home/freaks/catkin_ws/devel/.private/image_geometry/lib/pkgconfig/image_geometry.pc /home/freaks/catkin_ws/devel/lib/pkgconfig/image_geometry.pc

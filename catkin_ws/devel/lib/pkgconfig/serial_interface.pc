@@ -1,0 +1,8 @@
+prefix=/home/freaks/catkin_ws/devel
+
+Name: serial_interface
+Description: Description of serial_interface
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
